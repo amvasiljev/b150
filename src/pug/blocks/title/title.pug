@@ -1,0 +1,12 @@
+mixin title(text,cl,h1,h2,h3)
+    if h1
+        .title(class= cl)
+            h1!= text
+    else if h2
+        .title(class= cl)
+            h2!= text
+    else if h3
+        .title(class= cl)= text
+    else
+        .title(class= cl)
+            h2= text

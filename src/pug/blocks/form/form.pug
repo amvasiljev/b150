@@ -1,0 +1,14 @@
+mixin form()
+    .form
+        .form__title Закажите  консультацию
+        .form__caption Введите свои данные и вопросы, мы Вам пришлем ответ на почту
+        form(action="/").form__box
+            .form__fieldset
+                input(type="text" name="name" placeholder="Имя").form__input 
+                input(type="tel" name="tel" placeholder="Номер").form__input 
+                textarea(name="text" placeholder="Напишите свой вопрос").form__textarea
+            .form__fieldset     
+                +button('Отправить','','/')
+                .form__consent
+                    span *
+                    span Нажимая на кнопку, Вы даете согласие на обработку своих персональных данных

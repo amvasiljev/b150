@@ -1,0 +1,24 @@
+// 
+
+
+
+.test {
+    font-size: 20px;
+    color: black;
+   font-family:$font;
+   
+    @media #{$m_1200} {
+       color: yellow;
+    }
+    @media #{$m_1024} {
+       color: green;
+    }
+    @media #{$m_768} {
+       color: indigo;
+    }
+    @media #{$m_320} {
+       color: red;
+    }
+
+}
+

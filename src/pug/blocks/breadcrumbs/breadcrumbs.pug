@@ -1,0 +1,7 @@
+mixin breadcrumbs(link2,item)
+    .breadcrumbs
+        .breadcrumbs__inner
+            a(href="/").breadcrumbs__link Главная
+            if link2
+                a(href="/").breadcrumbs__link= link2
+            .breadcrumbs__item= item

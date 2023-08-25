@@ -1,0 +1,62 @@
+
+include ../blocks/test/test
+include ../blocks/breadcrumbs/breadcrumbs
+include ../blocks/burger/burger
+include ../blocks/button/button
+include ../blocks/footer/footer
+include ../blocks/form/form
+include ../blocks/header/header
+include ../blocks/logo/logo
+include ../blocks/nav/nav
+include ../blocks/popup/popup
+include ../blocks/preloader/preloader
+//- include ../blocks/section/section
+include ../blocks/title/title
+
+
+
+block variables
+<!DOCTYPE html>
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title #{title}
+        meta(name="description", content=description)
+
+        style
+            | #preloader {
+            | position: fixed;
+            | top: 0;
+            | left: 0;
+            | width: 100%;
+            | height: 100%;
+            | display: flex;
+            | align-items: center;
+            | justify-content: center;
+            | background: #fff;
+            | z-index: 999999;
+            | }
+            | #preloader.hide-preloader {
+            | animation: hidePreloader 1s;
+            | }
+            | #preloader.preloader-hidden {
+            | display: none;
+            | }
+            | @keyframes hidePreloader {
+            | 0% {
+            | opacity: 1;
+            | }
+            | 100% {
+            | opacity: 0;
+            | }
+        include ../includes/styles
+    body(class=pageClass)
+        +preloader()
+        +header()
+        block content
+        +footer()
+        +popup()
+
+        include ../includes/scripts
