@@ -26,38 +26,47 @@
 
 
 
-
 ::-webkit-scrollbar {
     width: 4px;
     height: 4px;
 }
 
 ::-webkit-scrollbar-track {
-    background: #fff;
+    background: #f1823b ;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #7dba00;
+    background-color: #061240;
 
     border-radius: 50px;
 
 }
 
 
+body{
+    position: relative;
+}
 
 
 * {
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Proxima Nova Rg";
     min-height: 0;
     min-width: 0;
 
 }
 
 
+.body{
+
+    &_grey{
+        background-color: #f8f8f8;
+    }
+}
+
+
 .stop_scrolling {
 
     height: 100vh;
-
     &:before {
         content: '';
         display: none;
@@ -122,28 +131,49 @@
     z-index: 200;
     height: 100%;
     width: 280px;
-    background-color: #1e1e1e;
+    background-color: #fff;
 
-    display: none;
+    overflow-y: auto;
 
-    @media #{$m_768} {
-        display: block;
+    .button_catalog {
+      
+        margin: 0 0 20px auto;
+
+       
+
     }
-    @media #{$m_320} {
-        display: block;
+    .social{
+        margin: 30px 0 0 0;
     }
+}
+
+
+#filter_side {
+    padding: 20px 0 50px 0;
+    position: fixed;
+    top: 0;
+    left: -280px;
+    z-index: 200;
+    height: 100%;
+    width: 280px;
+    background-color: #fff;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 
     overflow-y: auto;
 
     .button_catalog {
 
-        margin: 0 0 20px auto;
+        margin-right: 20px;
 
-
-
+        flex: 0 0 40px;
     }
 
-    .social {
-        margin: 30px 0 0 0;
+    .filter__buttons {
+        padding: 20px 0;
     }
 }
+
+
