@@ -25,6 +25,13 @@
 
 @import '../blocks/first/first';
 
+@import '../blocks/counter/counter';
+@import '../blocks/product/product';
+@import '../blocks/product/product-preview/product-preview';
+@import '../blocks/product/product-tag/product-tag';
+@import '../blocks/product/product-gallery/product-gallery';
+@import '../blocks/product/product-link/product-link';
+
 
 ::-webkit-scrollbar {
     width: 4px;

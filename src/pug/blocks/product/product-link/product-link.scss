@@ -1,0 +1,72 @@
+.product-link {
+
+    display: flex;
+    gap: 20px;
+    flex-flow: wrap;
+
+    @media #{$m_320} {
+        gap: 24px;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.5;
+        letter-spacing: normal;
+        text-align: left;
+        color: #061240;
+        gap: 10px;
+
+        position: relative;
+        transition: all 0.2s ease;
+
+        @media #{$m_768} {
+            font-size: 14px;
+        }
+
+        @media #{$m_320} {
+            font-size: 14px;
+        }
+
+
+        &:before{
+            content:'';
+            display: block;
+            height: 1px;
+            width: 100%;
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            border-bottom: 1px dashed #061240;
+            transition: all 0.2s ease;
+
+        }
+
+        svg {
+            height: 24px;
+            width: 24px;
+            flex-shrink: 0;
+
+            @media #{$m_320} {
+                width: 18px;
+                height: 18px;
+            }
+        }
+
+        &:hover{
+            color: #F1823B;
+            transition: all 0.2s ease;
+
+
+            &:before{
+                border-color: #F1823B;
+                transition: all 0.2s ease;
+
+            }
+        }
+    }
+}

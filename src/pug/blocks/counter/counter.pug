@@ -1,0 +1,25 @@
+mixin counter()
+    .counter.minicart_change
+
+
+        
+            <input type="hidden" name="key" value="">
+            <input type="hidden" name="id" value="35">
+            <input type="hidden" name="count" value="1">
+
+            
+            
+            
+            
+                <div class="counter__option counter__option_minus">
+                    svg(class="counter__svg")
+                        use(xlink:href= img + "sprite.svg#svg_counter_up")
+                </div>
+                <input type="number" min="0" name="count" value="0" class="form-control counter__input">
+                <div class="counter__option counter__option_plus">
+                    svg(class="counter__svg")
+                        use(xlink:href= img + "sprite.svg#svg_counter_up")
+                </div>
+
+                <button class="buttonChange" type="submit" name="ms2_action" value="cart/change" style="display: none;">↻</button>
+

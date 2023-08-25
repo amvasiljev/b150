@@ -1,0 +1,144 @@
+mixin product-gallery(page)
+
+    if page
+        .product-gallery.product-gallery_page
+            +product-tag('','','tag3')
+            .product-gallery__thumbs.swiper 
+                .swiper-wrapper 
+                    .swiper-slide    
+                        picture
+                            source(data-srcset=img + 'product/webp/product_1.webp' type="image/webp") 
+                            img(data-src= img + 'product/product_1.png' data-sizes="auto").lazyload 
+                    .swiper-slide    
+                        picture
+                            source(data-srcset=img + 'product/webp/product_video.webp' type="image/webp") 
+                            img(data-src= img + 'product/product_video.png' data-sizes="auto").lazyload 
+                    .swiper-slide    
+                        picture
+                            source(data-srcset=img + 'product/webp/product_2.webp' type="image/webp") 
+                            img(data-src= img + 'product/product_2.png' data-sizes="auto").lazyload 
+
+                    .swiper-slide    
+                        picture
+                            source(data-srcset=img + 'product/webp/product_3.webp' type="image/webp") 
+                            img(data-src= img + 'product/product_3.png' data-sizes="auto").lazyload 
+                    .swiper-slide    
+                        picture
+                            source(data-srcset=img + 'product/webp/product_4.webp' type="image/webp") 
+                            img(data-src= img + 'product/product_4.png' data-sizes="auto").lazyload 
+
+
+                            
+            .product-gallery__images.swiper 
+                
+                .swiper-wrapper
+
+
+                    a(href=img + 'product/product_1.png' data-fancybox).swiper-slide    
+                        picture
+                            source(data-srcset=img + 'product/webp/product_1.webp' type="image/webp") 
+                            img(data-src= img + 'product/product_1.png' data-sizes="auto").lazyload 
+
+                    a(href="https://youtu.be/gOHO8D3VKuI" data-fancybox).swiper-slide    
+                        picture
+                            source(data-srcset=img + 'product/webp/product_video.webp' type="image/webp") 
+                            img(data-src= img + 'product/product_video.png' data-sizes="auto").lazyload 
+                    a(href=img + 'product/product_2.png' data-fancybox).swiper-slide    
+                        picture
+                            source(data-srcset=img + 'product/webp/product_2.webp' type="image/webp") 
+                            img(data-src= img + 'product/product_2.png' data-sizes="auto").lazyload 
+
+                    a(href=img + 'product/product_3.png' data-fancybox).swiper-slide    
+                        picture
+                            source(data-srcset=img + 'product/webp/product_3.webp' type="image/webp") 
+                            img(data-src= img + 'product/product_3.png' data-sizes="auto").lazyload 
+
+                    a(href=img + 'product/product_4.png' data-fancybox).swiper-slide    
+                        picture
+                            source(data-srcset=img + 'product/webp/product_4.webp' type="image/webp") 
+                            img(data-src= img + 'product/product_4.png' data-sizes="auto").lazyload 
+
+                    
+
+                .swiper-pagination
+            .product-gallery__options
+
+                .product-gallery__arrows
+
+                    .product-gallery__arrow.product-gallery__arrow_grey.product-gallery__arrow_prev
+                        svg(class="product-gallery__svg")
+                            use(xlink:href= img + "sprite.svg#arrow_top")
+                    .product-gallery__arrow.product-gallery__arrow_grey.product-gallery__arrow_next
+                        svg(class="product-gallery__svg")
+                            use(xlink:href= img + "sprite.svg#arrow_top")
+                            
+
+                    
+
+                
+    else
+        .product-gallery
+            .product-gallery__images.swiper 
+                .swiper-wrapper
+                    .swiper-slide
+                        picture
+                            source(data-srcset=img + 'product/webp/product_1.webp' type="image/webp") 
+                            img(data-src= img + 'product/product_1.png' data-sizes="auto").lazyload 
+                        
+                    .swiper-slide    
+                        picture
+                            source(data-srcset=img + 'product/webp/product_2.webp' type="image/webp") 
+                            img(data-src= img + 'product/product_1.png' data-sizes="auto").lazyload 
+                    
+                    .swiper-slide    
+                        picture
+                            source(data-srcset=img + 'product/webp/product_3.webp' type="image/webp") 
+                            img(data-src= img + 'product/product_1.png' data-sizes="auto").lazyload 
+                    
+                    .swiper-slide    
+                        picture
+                            source(data-srcset=img + 'product/webp/product_4.webp' type="image/webp") 
+                            img(data-src= img + 'product/product_1.png' data-sizes="auto").lazyload 
+                    
+                    .swiper-slide    
+                        picture
+                            source(data-srcset=img + 'product/webp/product_1.webp' type="image/webp") 
+                            img(data-src= img + 'product/product_1.png' data-sizes="auto").lazyload 
+                .swiper-pagination
+            .product-gallery__options
+
+                .product-gallery__arrows
+
+                    .product-gallery__arrow.product-gallery__arrow_grey.product-gallery__arrow_prev
+                        svg(class="product-gallery__svg")
+                            use(xlink:href= img + "sprite.svg#arrow_top")
+                    .product-gallery__arrow.product-gallery__arrow_grey.product-gallery__arrow_next
+                        svg(class="product-gallery__svg")
+                            use(xlink:href= img + "sprite.svg#arrow_top")
+                            
+            .product-gallery__thumbs.swiper 
+                .swiper-wrapper 
+
+                    .swiper-slide    
+                        picture
+                            source(data-srcset=img + 'product/webp/product_1.webp' type="image/webp") 
+                            img(data-src= img + 'product/product_1.png' data-sizes="auto").lazyload 
+                    .swiper-slide    
+                        picture
+                            source(data-srcset=img + 'product/webp/product_2.webp' type="image/webp") 
+                            img(data-src= img + 'product/product_1.png' data-sizes="auto").lazyload 
+                    .swiper-slide    
+                        picture
+                            source(data-srcset=img + 'product/webp/product_3.webp' type="image/webp") 
+                            img(data-src= img + 'product/product_1.png' data-sizes="auto").lazyload 
+                    .swiper-slide    
+                        picture
+                            source(data-srcset=img + 'product/webp/product_4.webp' type="image/webp") 
+                            img(data-src= img + 'product/product_1.png' data-sizes="auto").lazyload 
+                    .swiper-slide    
+                        picture
+                            source(data-srcset=img + 'product/webp/product_1.webp' type="image/webp") 
+                            img(data-src= img + 'product/product_1.png' data-sizes="auto").lazyload 
+                    
+
+                

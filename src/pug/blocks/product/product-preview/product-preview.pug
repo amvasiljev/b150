@@ -1,0 +1,324 @@
+mixin product-preview(box,slider)
+    if box
+        .product-preview__box#mse2_results
+            .product-preview
+                .product-preview__inner
+                    +product-tag('tag_1')
+                    a(href="/").product-preview__image 
+                        
+
+                        picture
+                            source(data-srcset=img + 'product/webp/product_1.webp' type="image/webp") 
+                            img(data-src= img + 'product/product_1.jpg' data-sizes="auto").lazyload
+                    .product-preview__content
+                        a(href="/").product-preview__title Новогоднее Приключение комбинированный
+                        .product-preview__prices
+                            .product-preview__price <span>6 150</span> ₽
+
+
+                        form(method="post" role="form").product-preview__options 
+                            +counter()
+                            +button('В корзину','button_reverse button_svg_18','','','','submit2')
+                        
+
+            .product-preview
+                .product-preview__inner
+                    +product-tag('','tag_2')
+                    a(href="/").product-preview__image 
+                        
+
+                        picture
+                            source(data-srcset=img + 'product/webp/product_2.webp' type="image/webp") 
+                            img(data-src= img + 'product/product_2.jpg' data-sizes="auto").lazyload
+                    .product-preview__content
+                        a(href="/").product-preview__title Сказочная Феерия
+                        .product-preview__prices
+                            .product-preview__price <span>6 150</span> ₽
+                            .product-preview__price.product-preview__price_old <span>7 150</span> ₽
+
+                        form(method="post" role="form").product-preview__options 
+                            +counter()
+                            +button('В корзину','button_reverse button_svg_18','','','','submit2')
+                        
+
+            .product-preview
+                .product-preview__inner
+                    +product-tag('','','tag_3')
+                    a(href="/").product-preview__image 
+                        
+
+                        picture
+                            source(data-srcset=img + 'product/webp/product_3.webp' type="image/webp") 
+                            img(data-src= img + 'product/product_3.jpg' data-sizes="auto").lazyload
+                    .product-preview__content
+                        a(href="/").product-preview__title Супер Салют ( + веерные элементы )
+                        .product-preview__prices
+                            .product-preview__price <span>6 150</span> ₽
+
+
+                        form(method="post" role="form").product-preview__options 
+                            +counter()
+                            +button('В корзину','button_reverse button_svg_18','','','','submit2')
+                        
+
+            .product-preview
+                .product-preview__inner
+                    +product-tag('tag_1')
+                    a(href="/").product-preview__image 
+                        
+
+                        picture
+                            source(data-srcset=img + 'product/webp/product_4.webp' type="image/webp") 
+                            img(data-src= img + 'product/product_4.jpg' data-sizes="auto").lazyload
+                    .product-preview__content
+                        a(href="/").product-preview__title Юбилейный
+                        .product-preview__prices
+                            .product-preview__price <span>27300</span> ₽
+
+
+                        form(method="post" role="form").product-preview__options 
+                            +counter()
+                            +button('В корзину','button_reverse button_svg_18','','','','submit2')
+
+            .product-preview
+                .product-preview__inner
+                    +product-tag('','tag_2')
+                    a(href="/").product-preview__image 
+                        
+
+                        picture
+                            source(data-srcset=img + 'product/webp/product_5.webp' type="image/webp") 
+                            img(data-src= img + 'product/product_5.jpg' data-sizes="auto").lazyload
+                    .product-preview__content
+                        a(href="/").product-preview__title Юбилейный
+                        .product-preview__prices
+                            .product-preview__price <span>27300</span> ₽
+
+
+                        form(method="post" role="form").product-preview__options 
+                            +counter()
+                            +button('В корзину','button_reverse button_svg_18','','','','submit2')
+  
+                        
+
+            .product-preview
+                .product-preview__inner
+                    +product-tag('tag_1')
+                    a(href="/").product-preview__image 
+                        
+
+                        picture
+                            source(data-srcset=img + 'product/webp/product_1.webp' type="image/webp") 
+                            img(data-src= img + 'product/product_1.jpg' data-sizes="auto").lazyload
+                    .product-preview__content
+                        a(href="/").product-preview__title Новогоднее Приключение комбинированный
+                        .product-preview__prices
+                            .product-preview__price <span>6 150</span> ₽
+
+
+                        form(method="post" role="form").product-preview__options 
+                            +counter()
+                            +button('В корзину','button_reverse button_svg_18','','','','submit2')
+                        
+
+            .product-preview
+                .product-preview__inner
+                    +product-tag('','tag_2')
+                    a(href="/").product-preview__image 
+                        
+
+                        picture
+                            source(data-srcset=img + 'product/webp/product_2.webp' type="image/webp") 
+                            img(data-src= img + 'product/product_2.jpg' data-sizes="auto").lazyload
+                    .product-preview__content
+                        a(href="/").product-preview__title Сказочная Феерия
+                        .product-preview__prices
+                            .product-preview__price <span>6 150</span> ₽
+                            .product-preview__price.product-preview__price_old <span>7 150</span> ₽
+
+                        form(method="post" role="form").product-preview__options 
+                            +counter()
+                            +button('В корзину','button_reverse button_svg_18','','','','submit2')
+                        
+
+            .product-preview
+                .product-preview__inner
+                    +product-tag('','','tag_3')
+                    a(href="/").product-preview__image 
+                        
+
+                        picture
+                            source(data-srcset=img + 'product/webp/product_3.webp' type="image/webp") 
+                            img(data-src= img + 'product/product_3.jpg' data-sizes="auto").lazyload
+                    .product-preview__content
+                        a(href="/").product-preview__title Супер Салют ( + веерные элементы )
+                        .product-preview__prices
+                            .product-preview__price <span>6 150</span> ₽
+
+
+                        form(method="post" role="form").product-preview__options 
+                            +counter()
+                            +button('В корзину','button_reverse button_svg_18','','','','submit2')
+                        
+
+            .product-preview
+                .product-preview__inner
+                    +product-tag('tag_1')
+                    a(href="/").product-preview__image 
+                        
+
+                        picture
+                            source(data-srcset=img + 'product/webp/product_4.webp' type="image/webp") 
+                            img(data-src= img + 'product/product_4.jpg' data-sizes="auto").lazyload
+                    .product-preview__content
+                        a(href="/").product-preview__title Юбилейный
+                        .product-preview__prices
+                            .product-preview__price <span>27300</span> ₽
+
+
+                        form(method="post" role="form").product-preview__options 
+                            +counter()
+                            +button('В корзину','button_reverse button_svg_18','','','','submit2')
+
+            .product-preview
+                .product-preview__inner
+                    +product-tag('','tag_2')
+                    a(href="/").product-preview__image 
+                        
+
+                        picture
+                            source(data-srcset=img + 'product/webp/product_5.webp' type="image/webp") 
+                            img(data-src= img + 'product/product_5.jpg' data-sizes="auto").lazyload
+                    .product-preview__content
+                        a(href="/").product-preview__title Юбилейный
+                        .product-preview__prices
+                            .product-preview__price <span>27300</span> ₽
+
+
+                        form(method="post" role="form").product-preview__options 
+                            +counter()
+                            +button('В корзину','button_reverse button_svg_18','','','','submit2')
+  
+    else if slider 
+        .swiper-slide 
+            .product-preview
+                .product-preview__inner
+                    +product-tag('tag_1')
+                    a(href="/").product-preview__image 
+                        
+
+                        picture
+                            source(data-srcset=img + 'product/webp/product_1.webp' type="image/webp") 
+                            img(data-src= img + 'product/product_1.jpg' data-sizes="auto").lazyload
+                    .product-preview__content
+                        a(href="/").product-preview__title Новогоднее Приключение комбинированный
+                        .product-preview__prices
+                            .product-preview__price <span>6 150</span> ₽
+
+
+                        form(method="post" role="form").product-preview__options 
+                            +counter()
+                            +button('В корзину','button_reverse button_svg_18','','','','submit2')
+                        
+        .swiper-slide 
+            .product-preview
+                .product-preview__inner
+                    +product-tag('tag_1')
+                    a(href="/").product-preview__image 
+                        
+
+                        picture
+                            source(data-srcset=img + 'product/webp/product_1.webp' type="image/webp") 
+                            img(data-src= img + 'product/product_1.jpg' data-sizes="auto").lazyload
+                    .product-preview__content
+                        a(href="/").product-preview__title Новогоднее Приключение комбинированный
+                        .product-preview__prices
+                            .product-preview__price <span>6 150</span> ₽
+
+
+                        form(method="post" role="form").product-preview__options 
+                            +counter()
+                            +button('В корзину','button_reverse button_svg_18','','','','submit2')
+                        
+        .swiper-slide 
+            .product-preview
+                .product-preview__inner
+                    +product-tag('tag_1')
+                    a(href="/").product-preview__image 
+                        
+
+                        picture
+                            source(data-srcset=img + 'product/webp/product_1.webp' type="image/webp") 
+                            img(data-src= img + 'product/product_1.jpg' data-sizes="auto").lazyload
+                    .product-preview__content
+                        a(href="/").product-preview__title Новогоднее Приключение комбинированный
+                        .product-preview__prices
+                            .product-preview__price <span>6 150</span> ₽
+
+
+                        form(method="post" role="form").product-preview__options 
+                            +counter()
+                            +button('В корзину','button_reverse button_svg_18','','','','submit2')
+                        
+
+        .swiper-slide 
+            .product-preview
+                .product-preview__inner
+                    +product-tag('tag_1')
+                    a(href="/").product-preview__image 
+                        
+
+                        picture
+                            source(data-srcset=img + 'product/webp/product_1.webp' type="image/webp") 
+                            img(data-src= img + 'product/product_1.jpg' data-sizes="auto").lazyload
+                    .product-preview__content
+                        a(href="/").product-preview__title Новогоднее Приключение комбинированный
+                        .product-preview__prices
+                            .product-preview__price <span>6 150</span> ₽
+
+
+                        form(method="post" role="form").product-preview__options 
+                            +counter()
+                            +button('В корзину','button_reverse button_svg_18','','','','submit2')
+                        
+        .swiper-slide 
+            .product-preview
+                .product-preview__inner
+                    +product-tag('tag_1')
+                    a(href="/").product-preview__image 
+                        
+
+                        picture
+                            source(data-srcset=img + 'product/webp/product_1.webp' type="image/webp") 
+                            img(data-src= img + 'product/product_1.jpg' data-sizes="auto").lazyload
+                    .product-preview__content
+                        a(href="/").product-preview__title Новогоднее Приключение комбинированный
+                        .product-preview__prices
+                            .product-preview__price <span>6 150</span> ₽
+
+
+                        form(method="post" role="form").product-preview__options 
+                            +counter()
+                            +button('В корзину','button_reverse button_svg_18','','','','submit2')
+                        
+        .swiper-slide 
+            .product-preview
+                .product-preview__inner
+                    +product-tag('tag_1')
+                    a(href="/").product-preview__image 
+                        
+
+                        picture
+                            source(data-srcset=img + 'product/webp/product_1.webp' type="image/webp") 
+                            img(data-src= img + 'product/product_1.jpg' data-sizes="auto").lazyload
+                    .product-preview__content
+                        a(href="/").product-preview__title Новогоднее Приключение комбинированный
+                        .product-preview__prices
+                            .product-preview__price <span>6 150</span> ₽
+
+
+                        form(method="post" role="form").product-preview__options 
+                            +counter()
+                            +button('В корзину','button_reverse button_svg_18','','','','submit2')
+                        
+

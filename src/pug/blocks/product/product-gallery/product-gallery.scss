@@ -1,0 +1,161 @@
+.product-gallery {
+
+    position: relative;
+
+    display: grid;
+    grid-template-columns: 80px auto;
+    gap: 10px;
+    align-items: start;
+
+
+    @media #{$m_320} {
+        grid-template-columns: 50px auto;
+    }
+
+   
+    .product-tag{
+        position: absolute;
+
+        top:10px;
+        left: 114px;
+
+        @media #{$m_320} {
+            right: 10px;
+            left: unset;
+        }
+    }
+
+    &__images {
+        width: 100%;
+        border-radius: 10px;
+
+        .swiper-wrapper {
+            height: 408px;
+
+            @media #{$m_320} {
+                height: 242px;
+            }
+
+        }
+
+        
+
+
+        .swiper-slide {
+
+            border-radius: 8px;
+            overflow: hidden;
+
+
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .swiper-pagination {
+            display: none;
+        }
+
+        .swiper-pagination-bullet {
+            width: 60px;
+            height: 3px;
+            flex-grow: 0;
+            margin: 0 5px;
+            border-radius: 11px;
+            background-color: #fff;
+            opacity: 0.35;
+
+            &-active {
+                opacity: 1;
+            }
+        }
+
+    }
+
+    &__thumbs {
+
+        align-self: center;
+        
+      
+
+        margin: 0;
+        padding: 0;
+
+
+        .swiper-wrapper {
+            height: 408px;
+ 
+            @media #{$m_320} {
+                height: 242px;
+            }
+           
+        }
+
+        .swiper-slide {
+
+            border-radius: 8px;
+            overflow: hidden;
+        
+            img {
+                border-radius: 8px;
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+
+    &__options {
+
+        position: absolute;
+
+        height: 100%;
+
+        top: 0;
+        right: 40px;
+        z-index: 10;
+    }
+
+    &__arrows {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width: 0;
+        padding: 10px 0;
+    }
+
+    &__arrow {
+        flex: 0 0 6px;
+        width: 12px;
+        height: 6px;
+        display: flex;
+        align-items: center;
+
+        svg {
+            height: 100%;
+            width: 100%;
+
+        }
+
+        &_next {
+            transform: rotate(180deg);
+            -webkit-transform: rotate(180deg);
+            -moz-transform: rotate(180deg);
+            -ms-transform: rotate(180deg);
+            -o-transform: rotate(180deg);
+
+        }
+    }
+
+
+    .swiper-slide{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
