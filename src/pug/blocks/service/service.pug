@@ -1,0 +1,37 @@
+mixin service()
+    .service
+        .service__item
+            .service__content
+                .service__title Химия для бассейнов
+                .service__text Для поддержания качества воды на должном уровне, мы предлагаем самый надёжный способ – химия для бассейнов, обработка воды химическими средствами.
+                +button('Подробнее','button_white  button_svg_24','','','','','svg_arrow','')
+            .service__image 
+                picture
+                    source(data-srcset=img + 'service/webp/service_1.webp' type="image/webp") 
+                    img(data-src= img + 'service/service_1.png' data-sizes="auto" alt="img").lazyload
+        
+        
+        .service__item
+            .service__content
+                .service__title Бассейны Интекс (Intex)
+                .service__text 
+                +button('Подробнее','button_white  button_svg_24','','','','','svg_arrow','')
+            .service__image 
+                picture
+                    source(data-srcset=img + 'service/webp/service_2.webp' type="image/webp") 
+                    img(data-src= img + 'service/service_2.png' data-sizes="auto" alt="img").lazyload
+
+        
+        
+        .service__item
+            .service__content
+                .service__title аксессуары
+                .service__text 
+                +button('Подробнее','button_white  button_svg_24','','','','','svg_arrow','')
+            .service__image 
+                picture
+                    source(data-srcset=img + 'service/webp/service_3.webp' type="image/webp") 
+                    img(data-src= img + 'service/service_3.png' data-sizes="auto" alt="img").lazyload
+
+        
+        

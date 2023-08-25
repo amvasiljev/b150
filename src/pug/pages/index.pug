@@ -5,8 +5,13 @@ block variables
     -var pageClass = ''
     -var img = '/assets/themes/default/img/'
 block content
-    +first()
+    //- +first()
+    //- .section
+    //-     .section__inner 
+    //-         +title('Хиты продаж<br><span>Химия для плавательных бассейнов и SPA</span>','title_center title_double','','h2')
+    //-         +slider('add')
     .section
         .section__inner 
-            +title('Хиты продаж<br><span>Химия для плавательных бассейнов и SPA</span>','title_center title_double','','h2')
-            +slider('add')
+
+            +service()
+
