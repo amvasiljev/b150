@@ -1,8 +1,86 @@
-
-
-
 .title {
+    padding: 0 0 20px 0;
 
-    
+    h1,
+    h2 {
+        font-size: 38px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.5;
+        letter-spacing: normal;
+        text-align: left;
+        color: #090f23;
+        text-transform: uppercase;
 
+        @media #{$m_768} {
+            font-size: 22px;
+        }
+        @media #{$m_320} {
+            font-size: 18px;
+        }
+    }
+
+    &_white {
+
+        h1,
+        h2 {
+            color: #fff;
+        }
+    }
+
+    &_big {
+
+        h1,
+        h2 {
+            font-size: 48px;
+
+
+            @media #{$m_320} {
+                font-size: 22px;
+            }
+
+        }
+    }
+
+    &_center {
+
+        h1,
+        h2 {
+            text-align: center;
+        }
+    }
+
+    &_total {
+
+
+        padding: 0;
+        h1,h2{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        span {
+            font-size: 20px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            
+            letter-spacing: normal;
+            text-align: left;
+            color: #f1823b;
+
+           
+            height: 42px;
+            display: inline-flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+           
+            padding: 0px 20px;
+            border-radius: 16px;
+            background-color: #f5f5f5;
+        }
+    }
 }

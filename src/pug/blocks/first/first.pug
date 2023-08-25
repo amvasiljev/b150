@@ -1,0 +1,12 @@
+mixin first()
+    .first
+        .first__inner 
+            +title('профессиональная<br>химия для бассейнов и спа','title_white title_big','h1')
+            .first__text Огромный выбор профессиональной химии для бассейнов и аксессуаров
+            +logo('','','animate')
+            +button('Смотреть каталог','button_white button_hot button_svg_24','','','','','svg_first')
+            
+        .first__image 
+            picture
+                source(data-srcset=img + 'first/webp/first_1.webp' type="image/webp") 
+                img(data-src= img + 'first/first_1.png' data-sizes="auto" alt="img").lazyload
