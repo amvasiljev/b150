@@ -104,6 +104,12 @@ $(".form_validate").find('form').each(function () {
 
 // validate form end
 
+$('select').on('click', function(){
+  $(this).toggleClass('select')
+})
+$('select').on('blur', function(){
+  $(this).removeClass('select')
+})
 
 
 

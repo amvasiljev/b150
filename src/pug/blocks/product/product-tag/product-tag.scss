@@ -5,8 +5,9 @@
     flex-flow: wrap;
 
     z-index: 20;
+
     &__item {
-        
+
 
         height: 30px;
 
@@ -17,14 +18,14 @@
 
         padding: 0 6px;
         border-radius: 60px;
-        background-color: #f1823b;
+        background-color: #7ed957;
 
         span {
             font-size: 12px;
             font-weight: bold;
             font-stretch: normal;
             font-style: normal;
-            line-height: 1.5;
+        
             letter-spacing: normal;
             text-align: left;
             color: #fff;
@@ -33,19 +34,10 @@
 
         svg {
             flex-shrink: 0;
-            height: 14px;
-            width: 14px;
+            height: 12px;
+            width: 12px;
         }
 
-        &_video {
-
-            background-color: transparent;
-
-            svg {
-     
-                height: 24px;
-                width: 24px;
-            }
-        }
+       
     }
 }

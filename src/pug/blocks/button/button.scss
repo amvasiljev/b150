@@ -73,6 +73,15 @@
             border-color: #1d54a1;
         }
     }
+    &_blue{
+
+        background-image: linear-gradient(to bottom, #397cd9 0%, #1d54a1 100%);
+        color: #fff;
+
+        &:hover{
+            border-color: #1d54a1;
+        }
+    }
 
     // &_grey {
     //     background-color: #ECECEC;

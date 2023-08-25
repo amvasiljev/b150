@@ -2,34 +2,29 @@ mixin product-tag(tag1,tag2,tag3)
     if tag1
         .product-tag
             .product-tag__item
-                span 112
+                span хит
                 svg(class="")
-                    use(xlink:href= img + "sprite.svg#svg_tag_rocket")
+                    use(xlink:href= img + "sprite.svg#svg_tag_fire")
 
 
     else if tag2
         .product-tag
             .product-tag__item
-                span 112
+                span хит
                 svg(class="")
-                    use(xlink:href= img + "sprite.svg#svg_tag_rocket")
+                    use(xlink:href= img + "sprite.svg#svg_tag_fire")
 
             .product-tag__item
+                span Скидка
                 svg(class="")
                     use(xlink:href= img + "sprite.svg#svg_tag_sale")
-                    span Скидка
-            .product-tag__item.product-tag__item_video
-                svg(class="")
-                    use(xlink:href= img + "sprite.svg#svg_tag_video")
+                    
+
     else if tag3
         .product-tag
 
             .product-tag__item
-                span 36 зарядов
-                svg(class="")
-                    use(xlink:href= img + "sprite.svg#svg_tag_rocket")
-            .product-tag__item
+                span Скидка
                 svg(class="")
                     use(xlink:href= img + "sprite.svg#svg_tag_sale")
-                    span Скидка
 
