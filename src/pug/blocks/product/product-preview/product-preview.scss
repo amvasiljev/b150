@@ -130,32 +130,32 @@
         margin-top: 10px;
         width: 100%;
 
-        @media #{$m_1024} {
-            margin-right: -41px;
-        }
+        // @media #{$m_1024} {
+        //     margin-right: -41px;
+        // }
 
-        @media #{$m_768} {
-            margin-right: -41px;
-        }
+        // @media #{$m_768} {
+        //     margin-right: -41px;
+        // }
 
 
         .button {
             width: 100%;
-            @media #{$m_1024} {
-                padding: 0 10px;
+            // @media #{$m_1024} {
+            //     padding: 0 10px;
 
-                span {
-                    display: none;
-                }
-            }
+            //     span {
+            //         display: none;
+            //     }
+            // }
 
-            @media #{$m_768} {
-                padding: 0 10px;
+            // @media #{$m_768} {
+            //     padding: 0 10px;
 
-                span {
-                    display: none;
-                }
-            }
+            //     span {
+            //         display: none;
+            //     }
+            // }
         }
     }
 

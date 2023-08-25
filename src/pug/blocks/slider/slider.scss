@@ -5,14 +5,16 @@
 
 
     .swiper-pagination {
-        display: none;
+        // display: none;
+
         @media #{$m_768} {
             display: block;
         }
+
         @media #{$m_320} {
             display: block;
         }
-        
+
     }
 
     .swiper-pagination-bullet {
@@ -23,7 +25,7 @@
         opacity: 1;
 
         &-active {
-            background-color: #f1823b;
+            background-color: #090f23;
         }
     }
 
@@ -374,12 +376,15 @@
         }
 
         svg {
-            height: 24px;
-            width: 24px;
-            transform: rotate(90deg);
-            color: #F1823B;
+            height: 14px;
+            width: 14px;
+            //transform: rotate(90deg);
+            color: #1D54A1;
             transition: all 0.2s ease;
-
+            -webkit-transition: all 0.2s ease;
+            -moz-transition: all 0.2s ease;
+            -ms-transition: all 0.2s ease;
+            -o-transition: all 0.2s ease;
         }
 
 
@@ -393,7 +398,7 @@
 
         &:hover {
             box-shadow: unset;
-            background-color: #F1823B;
+            background-color: #1D54A1;
             transition: all 0.2s ease;
 
             svg {

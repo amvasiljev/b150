@@ -114,6 +114,9 @@ $('select').on('blur', function(){
 
 
 
+
+
+
 // default slider 
 
 
@@ -139,7 +142,6 @@ function sliderAll(elem) {
   let initialSlide
   let free
   let fraction
-  let centeredSlides
 
   $(elem).each(function (indx) {
 
@@ -166,11 +168,6 @@ function sliderAll(elem) {
       loop = false
       number = 'auto'
       initialSlide = 0
-    }
-    if ($this.hasClass('slider_center')) {
-      centeredSlides = true
-    } else {
-      centeredSlides = false
     }
 
     if ($this.hasClass('slider_nofree')) {
@@ -207,7 +204,6 @@ function sliderAll(elem) {
       // loop: true,
       // freeMode: true,
       // If we need pagination
-      centeredSlides: centeredSlides,
       slidesPerView: number,
       spaceBetween: space,
       effect: fade,
