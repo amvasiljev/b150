@@ -1,0 +1,18 @@
+mixin slider(add)
+    if add
+        .slider.slider_product
+            .slider__options
+                
+                .slider__arrows
+                    
+                    .slider__arrow.slider__arrow_prev
+                        svg(class="slider__svg")
+                            use(xlink:href= img + "sprite.svg#svg_arrow_top")
+
+                    .slider__arrow.slider__arrow_next
+                        svg(class="slider__svg")
+                            use(xlink:href= img + "sprite.svg#svg_arrow_top")
+            .swiper
+                .swiper-wrapper
+                    +product-preview('','slider')
+                .swiper-pagination

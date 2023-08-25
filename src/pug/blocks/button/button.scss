@@ -74,35 +74,35 @@
         }
     }
 
-    &_grey {
-        background-color: #ECECEC;
-        background-image: unset;
+    // &_grey {
+    //     background-color: #ECECEC;
+    //     background-image: unset;
 
-        color: #727272;
-
-
-        &:hover {
-            background-image: unset;
-            box-shadow: unset;
-        }
-    }
-
-    &_transparent {
-        background-color: transparent;
-        background-image: unset;
-
-        color: #727272;
-
-        padding: 0 10px;
-        border-radius: 12px;
-        border: solid 1px #727272;
+    //     color: #727272;
 
 
-        &:hover {
-            background-image: unset;
-            box-shadow: unset;
-        }
-    }
+    //     &:hover {
+    //         background-image: unset;
+    //         box-shadow: unset;
+    //     }
+    // }
+
+    // &_transparent {
+    //     background-color: transparent;
+    //     background-image: unset;
+
+    //     color: #727272;
+
+    //     padding: 0 10px;
+    //     border-radius: 12px;
+    //     border: solid 1px #727272;
+
+
+    //     &:hover {
+    //         background-image: unset;
+    //         box-shadow: unset;
+    //     }
+    // }
 
     &_low {
         text-transform: unset;
