@@ -1,0 +1,16 @@
+mixin pagination()
+    .pagination
+        //- a(href="/").pagination__arrow.pagination__arrow_left
+        //-     svg(class="pagination__svg")
+        //-         use(xlink:href= img + "sprite.svg#default_arrow")
+
+        a(href="/").pagination__number 1
+        a(href="/").pagination__number 2
+        a(href="/").pagination__number.pagination__number_active 3
+        a(href="/").pagination__number 4
+        //- a(href="/").pagination__empty ...
+        a(href="/").pagination__number 5
+        //- a(href="/").pagination__arrow.pagination__arrow_right
+        //-     svg(class="pagination__svg")
+        //-         use(xlink:href= img + "sprite.svg#default_arrow")
+        

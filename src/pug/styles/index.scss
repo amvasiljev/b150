@@ -47,6 +47,8 @@
 
 @import '../blocks/search/search';
 
+@import '../blocks/pagination/pagination';
+
 @import '../blocks/select/select';
 @import '../blocks/filter/filter';
 @import '../blocks/filter/filter-top/filter-top';
@@ -203,12 +205,3 @@ body{
 }
 
 
-
-// .tetet{
-//     transform: rotate(180deg);
-//     transition: all 0.2s ease;
-//     -webkit-transition: all 0.2s ease;
-//     -moz-transition: all 0.2s ease;
-//     -ms-transition: all 0.2s ease;
-//     -o-transition: all 0.2s ease;
-// }

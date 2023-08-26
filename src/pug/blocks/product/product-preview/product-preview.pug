@@ -216,28 +216,28 @@ mixin product-preview(box,slider)
                                     option(value="ЭКВИ-минус 5кг") ЭКВИ-минус 5кг
                             +button('В корзину','button_reverse button_blue button_svg_18','','','','submit2')
 
-            .product-preview
-                .product-preview__inner
-                    +product-tag('','tag_2')
-                    a(href="/").product-preview__image 
+            //- .product-preview
+            //-     .product-preview__inner
+            //-         +product-tag('','tag_2')
+            //-         a(href="/").product-preview__image 
                         
 
-                        picture
-                            source(data-srcset=img + 'product/webp/product_5.webp' type="image/webp") 
-                            img(data-src= img + 'product/product_5.jpg' data-sizes="auto").lazyload
-                    .product-preview__content
-                        a(href="/").product-preview__title ЭКВИ-минус гранулы 1 кг. 6 кг. и 30 кг.
-                        .product-preview__prices
-                            .product-preview__price <span>27300</span> ₽
+            //-             picture
+            //-                 source(data-srcset=img + 'product/webp/product_5.webp' type="image/webp") 
+            //-                 img(data-src= img + 'product/product_5.jpg' data-sizes="auto").lazyload
+            //-         .product-preview__content
+            //-             a(href="/").product-preview__title ЭКВИ-минус гранулы 1 кг. 6 кг. и 30 кг.
+            //-             .product-preview__prices
+            //-                 .product-preview__price <span>27300</span> ₽
 
 
-                        .product-preview__description Гранулированное средство для понижения уровня жёсткости рН pH воды...
-                        form(method="post" role="form").product-preview__options 
-                            .product-preview__select 
-                                select(name="")
-                                    option(value="ЭКВИ-минус 1кг") ЭКВИ-минус 1кг
-                                    option(value="ЭКВИ-минус 5кг") ЭКВИ-минус 5кг
-                            +button('В корзину','button_reverse button_blue button_svg_18','','','','submit2')
+            //-             .product-preview__description Гранулированное средство для понижения уровня жёсткости рН pH воды...
+            //-             form(method="post" role="form").product-preview__options 
+            //-                 .product-preview__select 
+            //-                     select(name="")
+            //-                         option(value="ЭКВИ-минус 1кг") ЭКВИ-минус 1кг
+            //-                         option(value="ЭКВИ-минус 5кг") ЭКВИ-минус 5кг
+            //-                 +button('В корзину','button_reverse button_blue button_svg_18','','','','submit2')
   
     else if slider 
         .swiper-slide 

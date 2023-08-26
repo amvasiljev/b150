@@ -1,0 +1,119 @@
+.pagination {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    flex-flow: wrap;
+    gap: 6px;
+    padding: 30px 0 0 0;
+
+
+
+    @media #{$m_320} {
+        justify-content: center;
+        padding: 40px 0;
+    }
+
+    &__number {
+        font-size: 14px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.5;
+        letter-spacing: normal;
+        text-align: left;
+        color: #d9d9d9;
+
+        width: 40px;
+        height: 40px;
+
+
+
+        border-radius:50%; 
+
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        border: solid 1px #d9d9d9;
+
+        @media #{$m_320} {
+            font-size: 14px;
+
+            height: 30px;
+            width: 30px;
+        }
+
+
+        &_active {
+            color: #1d54a1;
+         
+            border-color: #1d54a1;
+        }
+
+        &:hover {
+            color: #1d54a1;
+         
+            border-color: #1d54a1;
+
+        }
+    }
+
+    &__arrow {
+
+        width: 40px;
+        height: 40px;
+
+
+
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        border: solid 1px #f1823b;
+        color: #f1823b;
+
+        @media #{$m_320} {
+            height: 30px;
+            width: 30px;
+        }
+
+
+        &_left {
+
+            transform: scale(-1);
+            -webkit-transform: scale(-1);
+            -moz-transform: scale(-1);
+            -ms-transform: scale(-1);
+            -o-transform: scale(-1);
+
+            @media #{$m_320} {}
+        }
+    }
+
+    &__svg {
+        width: 18px;
+        height: 18px;
+        color: #f1823b;
+    }
+
+    &__caption {
+        font-size: 13px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: justify;
+        color: #666;
+        padding: 40px 0 0 0;
+
+        @media #{$m_320} {
+            padding: 35px 0 0 0;
+            font-size: 12px;
+        }
+    }
+}
