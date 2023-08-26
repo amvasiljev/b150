@@ -80,5 +80,11 @@ html(lang="ru")
         block content
         +footer()
         +popup()
-
+        #category_side 
+            +button('','button_catalog button_close','','','','','','svg_close','')
+            .nav-mobile 
+            +button('Заказать звонок','','','','#popup_callback')
+            +social()
+        #filter_side 
+            +button('Свернуть','button_catalog','','#hide','','','','','','')
         include ../includes/scripts

@@ -87,6 +87,21 @@
         }
     }
 
+    &_border{
+        border-color: #1d54a1;
+        &:hover{
+        
+            svg{
+                color: #1D54A1;
+            }
+            background-color: #1d54a1;
+            color: #fff;
+            svg{
+                color: #fff;
+            }
+        }
+    }
+
     // &_grey {
     //     background-color: #ECECEC;
     //     background-image: unset;
@@ -120,7 +135,7 @@
     &_low {
         text-transform: unset;
         font-weight: normal;
-        font-size: 14px;
+        font-size: 16px;
     }
 
     &_hot {
@@ -188,6 +203,7 @@
         width: 42px;
         padding: 0;
         border-radius: 50%;
+        background-image: linear-gradient(to bottom, #397cd9 0%, #1d54a1 100%);
 
         @media #{$m_768} {
             padding: 0;

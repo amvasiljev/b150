@@ -1,9 +1,9 @@
 .burger {
 
-    height: 40px;
-    width: 44px;
+    height: 44px;
+    width: 40px;
     border-radius: 16px;
-    border: solid 1px #fff;
+    border: solid 1px #1D54A1;
     display: none;
     align-items: center;
     justify-content: center;
@@ -25,16 +25,20 @@
     svg {
         height: 24px;
         width: 24px;
-        color: #fff;
+        color: #1D54A1;
         transition: all 0.2s ease;
-    }
+        -webkit-transition: all 0.2s ease;
+        -moz-transition: all 0.2s ease;
+        -ms-transition: all 0.2s ease;
+        -o-transition: all 0.2s ease;
+}
 
     &:hover {
-        border-color: #F1823B;
+        border-color: #090F23;
         transition: all 0.2s ease;
 
         svg {
-            color: #F1823B;
+            color: #090F23;
             transition: all 0.2s ease;
         }
     }

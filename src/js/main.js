@@ -1,6 +1,7 @@
 const mediaQuery_767 = window.matchMedia('(max-width: 767px)')
 const mediaQuery_1023 = window.matchMedia('(max-width: 1023px)')
 const mediaQuery_1199 = window.matchMedia('(max-width: 1199px)')
+const mediaQuery_1200 = window.matchMedia('(max-width: 1200px)')
 
 window.onload = function () {
   let preloader = document.getElementById('preloader');
@@ -104,12 +105,26 @@ $(".form_validate").find('form').each(function () {
 
 // validate form end
 
-$('select').on('click', function(){
+$('select').on('click', function () {
   $(this).toggleClass('select')
 })
-$('select').on('blur', function(){
+$('select').on('blur', function () {
   $(this).removeClass('select')
 })
+
+
+
+
+// search mobile 
+
+$('.search_mobile').on('click', function () {
+  $(this).toggleClass('search_mobile_active')
+  $('.search_main').fadeToggle(100)
+})
+
+// search mobile end
+
+
 
 
 
@@ -348,10 +363,10 @@ $('.button_catalog').on('click', function (e) {
   } else if (side == '#hide') {
 
     $('#category_side').animate({
-      right: '-280px',
+      right: '-300px',
     }, 200)
     $('#filter_side').animate({
-      left: '-280px',
+      left: '-300px',
     }, 200)
     $('body').removeClass('stop_scrolling');
 
@@ -371,4 +386,62 @@ window.addEventListener('scroll', () => {
 
 
 
+
 // nav end
+
+// nav mobile 
+
+
+
+
+
+
+// nav mobile end
+
+
+
+function mobileMove2(e) {
+  if (e.matches) {
+
+    $('.nav > ul').clone().appendTo('.nav-mobile')
+
+
+    $('.nav-mobile').find('li').each(function () {
+
+      var $this = $(this)
+      var next = $this.find('ul').eq(0)
+      var link = $this.find('a')
+
+      if (link.next('svg').length > 0) {
+        link.addClass('nav-mobile__parent')
+
+       
+      } else {
+        link.addClass('nav-mobile__single')
+      }
+
+    })
+
+    $('.nav-mobile__parent').next('svg').on('click', function(){
+      var $this = $(this)
+      var ul = $this.next('ul')
+
+      $this.toggleClass('nav-mobile__svg_active')
+
+      ul.slideToggle()
+    })
+
+
+
+  } else {
+
+    $('.nav-mobile').find('ul').remove()
+
+  }
+}
+
+
+
+
+mediaQuery_1200.addListener(mobileMove2)
+mobileMove2(mediaQuery_1200)
