@@ -80,10 +80,19 @@
         border-color: #1d54a1;
         color: #fff;
 
+
+        svg{
+            color: #fff;
+        }
+
         &:hover{
             border-color: #1d54a1;
             background-color: #fff;
             color: #1d54a1;
+
+            svg{
+                color: #1d54a1
+            }
         }
     }
 
