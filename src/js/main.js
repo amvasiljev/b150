@@ -305,6 +305,118 @@ function sliderAll(elem) {
 
 
 
+
+
+// filter 
+
+
+$(".slider-range_container").slider({
+  range: true,
+  min: 0,
+  max: 30000,
+  values: [0, 20000],
+  slide: function (event, ui) {
+    $("#amount").val("₽" + ui.values[0] + ui.values[1]);
+  }
+});
+$("#amount").val("$" + $("#slider-range").slider("values", 0) + $("#slider-range").slider("values", 1));
+
+
+
+var customInput = $('.filter__range').find('input')
+
+customInput.each(function () {
+
+  var $this = $(this)
+  var buffer = $this.next('.filter__buffer')
+
+  buffer.text($this.attr('value'));
+  setTimeout(function () {
+    $this.width(buffer.width());
+  }, 4)
+
+
+  $this.on('change', function () {
+    buffer.text($this.val());
+    $this.width(buffer.width());
+
+  });
+
+
+
+
+  $this.on('keypress keyup blur', function (event) {
+    keyCode = (event.which) ? event.which : event.keyCode;
+    buffer.text($this.val());
+    $this.width(buffer.width());
+    // console.log($this.width());
+    // console.log('change');
+    return !(keyCode > 31 && (keyCode < 48 || keyCode > 57));
+  });
+
+
+})
+
+
+$('.filter__label_check input').on('change', function () {
+
+  $(this).parent('.filter__label_check').toggleClass('filter__label_check_active')
+})
+
+$('.filter__title').each(function () {
+  var $this = $(this)
+  var box = $this.next('.filter__box')
+  $this.on('click', function () {
+    $this.toggleClass('filter__title_hide')
+    box.toggleClass('filter__box_hide')
+
+    box.slideToggle(300)
+  })
+})
+
+// filter end
+
+
+// custom select 
+
+$('.select').each(function () {
+
+  var $this = $(this)
+  var icon = $this.find('.select__icon')
+  var box = $this.find('.select__box')
+  var item = $this.find('.select__item')
+  icon.on('click', function () {
+    icon.toggleClass('select__icon_active')
+    box.toggleClass('select__box_active')
+
+  })
+
+  item.on('click', function () {
+
+    if (!$(this).hasClass('select__item_active')) {
+      $(this).css('order', '0').addClass('select__item_active')
+      item.not($(this)).css('order', '1').removeClass('select__item_active')
+      // console.log('click');
+
+      setTimeout(function () {
+
+        box.addClass('select__box_active')
+        icon.addClass('select__icon_active')
+      }, 200)
+
+    } else {
+      box.toggleClass('select__box_active')
+      icon.toggleClass('select__icon_active')
+    }
+
+
+
+
+  })
+
+
+})
+
 // nav 
 
 $('.button_catalog').on('click', function (e) {
@@ -392,6 +504,21 @@ window.addEventListener('scroll', () => {
 // nav mobile 
 
 
+setTimeout(function () {
+  $('.nav > ul').clone().appendTo('.nav-mobile_filter')
+  
+  navMobile('.nav-mobile_filter')
+
+  $('.nav-mobile_filter > ul > li').each(function(){
+    console.log($(this));
+    
+    if($(this).find('ul').length == 0){
+      $(this).remove()
+    }
+
+  })
+}, 4)
+
 
 
 
@@ -403,43 +530,52 @@ window.addEventListener('scroll', () => {
 function mobileMove2(e) {
   if (e.matches) {
 
-    $('.nav > ul').clone().appendTo('.nav-mobile')
+    $('.nav > ul').clone().appendTo('.nav-mobile_side')
+
+    navMobile('.nav-mobile_side')
 
 
-    $('.nav-mobile').find('li').each(function () {
-
-      var $this = $(this)
-      var next = $this.find('ul').eq(0)
-      var link = $this.find('a')
-
-      if (link.next('svg').length > 0) {
-        link.addClass('nav-mobile__parent')
-
-       
-      } else {
-        link.addClass('nav-mobile__single')
-      }
-
-    })
-
-    $('.nav-mobile__parent').next('svg').on('click', function(){
-      var $this = $(this)
-      var ul = $this.next('ul')
-
-      $this.toggleClass('nav-mobile__svg_active')
-
-      ul.slideToggle()
-    })
+    
 
 
 
   } else {
 
-    $('.nav-mobile').find('ul').remove()
+    $('.nav-mobile_side').find('ul').remove()
 
   }
 }
 
+
+function navMobile(elem) {
+  $(elem).find('li').each(function () {
+
+    var $this = $(this)
+    // var next = $this.find('ul').eq(0)
+    var link = $this.find('a')
+
+    if (link.next('svg').length > 0) {
+      link.addClass('nav-mobile__parent')
+
+
+    } else {
+      link.addClass('nav-mobile__single')
+      
+    }
+
+  })
+
+  $(elem).find('.nav-mobile__parent').next('svg').on('click', function () {
+    var $this = $(this)
+    var ul = $this.next('ul')
+
+    $this.toggleClass('nav-mobile__svg_active')
+
+    ul.slideToggle()
+  })
+
+ 
+}
 
 
 

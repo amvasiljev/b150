@@ -117,9 +117,9 @@
         }
 
         svg {
-            width: 14px;
-            height: 14px;
-            flex: 0 0 14px;
+            width: 10px;
+            height: 10px;
+            flex: 0 0 10px;
 
 
             transition: all 0.1s ease;
@@ -132,17 +132,17 @@
 
         &_hide {
             svg {
-                transform: rotate(180deg);
-                -webkit-transform: rotate(180deg);
-                -moz-transform: rotate(180deg);
-                -ms-transform: rotate(180deg);
-                -o-transform: rotate(180deg);
+                transform: rotate(-90deg);
+                -webkit-transform: rotate(-90deg);
+                -moz-transform: rotate(-90deg);
+                -ms-transform: rotate(-90deg);
+                -o-transform: rotate(-90deg);
                 transition: all 0.1s ease;
                 -webkit-transition: all 0.1s ease;
                 -moz-transition: all 0.1s ease;
                 -ms-transition: all 0.1s ease;
                 -o-transition: all 0.1s ease;
-            }
+}
         }
 
     }

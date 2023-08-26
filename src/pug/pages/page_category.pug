@@ -5,7 +5,7 @@ block variables
     -var pageClass = 'body_grey'
     -var img = '/assets/themes/default/img/'
 block content
-    +breadcrumbs('','Развлекательная пиротехника')
+    +breadcrumbs('','Химия для бассейнов')
     .section.section_grey
         .section__inner.section__inner_first 
             +filter-top()
@@ -14,10 +14,7 @@ block content
             .section__sidebar
                 .section__sticky
                     +filter()
-                    .section__action 
-                        picture
-                            source(data-srcset=img + 'action/webp/action_side.webp' type="image/webp") 
-                            img(data-src= img + 'action/action_side.jpg' data-sizes="auto" alt="img").lazyload
+
             .section__box.section__box_category 
                 +product-preview('box')
 

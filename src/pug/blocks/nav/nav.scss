@@ -317,4 +317,48 @@
         display: inline-flex;
         width: 100%;
     }
+
+
+    &_filter {
+
+        svg {
+            position: relative;
+            right: -10px;
+        }
+
+        ul>li>a {
+            text-transform: unset;
+
+            &:hover {
+                color: #1d54a1;
+            }
+        }
+
+        .nav__svg {
+            transform: rotate(-90deg);
+            -webkit-transform: rotate(-90deg);
+            -moz-transform: rotate(-90deg);
+            -ms-transform: rotate(-90deg);
+            -o-transform: rotate(-90deg);
+
+
+
+        }
+
+        .nav-mobile__svg {
+
+            &_active {
+                transform: rotate(0deg);
+                transition: all 0.2s ease;
+                -webkit-transition: all 0.2s ease;
+                -moz-transition: all 0.2s ease;
+                -ms-transition: all 0.2s ease;
+                -o-transition: all 0.2s ease;
+                -webkit-transform: rotate(0deg);
+                -moz-transform: rotate(0deg);
+                -ms-transform: rotate(0deg);
+                -o-transform: rotate(0deg);
+}
+        }
+    }
 }

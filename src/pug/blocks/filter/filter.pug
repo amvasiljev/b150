@@ -63,82 +63,26 @@ mixin filter(main)
 	else
 
 		.filter.filter_catalog
-			.filter__heading Фильтры
+			//- .filter__heading Фильтры
+			
 			form.filter__form#mse2_filters(action='pilomaterialyi/brusok-1' method='post')
 
 
 				.filter__wrapper
 					h4.filter__title Категории
 						svg(class="")
-							use(xlink:href= img + "sprite.svg#svg_arrow_top")
+							use(xlink:href= img + "sprite.svg#svg_nav")
 
 					.filter__box.filter__box_check.filter__box_hide
 
-						fieldset.filter__fieldset(id='mse2_msoption|custom_length')
-							label.filter__label.filter__label_check(for='mse2_msoption|custom_brand_1')
-
-								input(type='checkbox' name='custom_length' id='mse2_msoption|custom_brand_1' value='упер салюты')
-								span Супер салюты
-									sup 5
-
-							label.filter__label.filter__label_check(for='mse2_msoption|custom_brand_2')
-
-								input(type='checkbox' name='custom_length' id='mse2_msoption|custom_brand_2' value='Большие салюты и фейерверки')
-								span Большие салюты и фейерверки
-									sup 11
-
-
-							label.filter__label.filter__label_check(for='mse2_msoption|custom_brand_3')
-
-								input(type='checkbox' name='custom_length' id='mse2_msoption|custom_brand_3' value='Салюты и фейрверки')
-								span Салюты и фейрверки
-									sup 1
-							label.filter__label.filter__label_check(for='mse2_msoption|custom_brand_4')
-
-								input(type='checkbox' name='custom_length' id='mse2_msoption|custom_brand_4' value='Небольшие салюты и фейерверки')
-								span Небольшие салюты и фейерверки
-									sup 12
-
-							label.filter__label.filter__label_check(for='mse2_msoption|custom_brand_5')
-
-								input(type='checkbox' name='custom_length' id='mse2_msoption|custom_brand_5' value='Фонтаны, дымы, файеры огневые')
-								span Фонтаны, дымы, файеры огневые
-									sup 6
-							label.filter__label.filter__label_check.disabled(for='mse2_msoption|custom_brand_6')
-
-								input(type='checkbox' name='custom_length' id='mse2_msoption|custom_brand_6' value='Ракеты' disabled='')
-								span Ракеты
-									sup 14
-							label.filter__label.filter__label_check(for='mse2_msoption|custom_brand_7')
-
-								input(type='checkbox' name='custom_length' id='mse2_msoption|custom_brand_7' value='Фестивальные шары')
-								span Фестивальные шары
-									sup 33
-							label.filter__label.filter__label_check(for='mse2_msoption|custom_brand_8')
-
-								input(type='checkbox' name='custom_length' id='mse2_msoption|custom_brand_8' value='Петарды')
-								span Петарды
-									sup 10
-							label.filter__label.filter__label_check(for='mse2_msoption|custom_brand_9')
-
-								input(type='checkbox' name='custom_length' id='mse2_msoption|custom_brand_9' value='Хлопушки и бенглальские огни')
-								span Хлопушки и бенглальские огни
-									sup 12
-							label.filter__label.filter__label_check(for='mse2_msoption|custom_brand_10')
-
-								input(type='checkbox' name='custom_length' id='mse2_msoption|custom_brand_10' value='Наземные и летающие фейрверки')
-								span Наземные и летающие фейрверки
-									sup 25
-
-
-
+						.nav-mobile.nav-mobile_filter
 
 
 
 				.filter__wrapper
 					.filter__title Цена Р
 						svg(class="")
-							use(xlink:href= img + "sprite.svg#svg_arrow_top")
+							use(xlink:href= img + "sprite.svg#svg_nav")
 
 					.filter__box.filter__box_range
 
@@ -160,7 +104,7 @@ mixin filter(main)
 				.filter__wrapper
 					.filter__title Количество зарядов
 						svg(class="")
-							use(xlink:href= img + "sprite.svg#svg_arrow_top")
+							use(xlink:href= img + "sprite.svg#svg_nav")
 
 					.filter__box.filter__box_range
 
