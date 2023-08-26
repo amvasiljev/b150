@@ -4,34 +4,24 @@ mixin product()
         +product-gallery('page')
 
         .product__content 
-            .product__article ОК875 
-            +title('Фейерверк Коктейль - 36','','h1')
+            .product__article Арт.019293782
+            +title('ЭКВИ-минус 20л.','','h1')
             .product__prices
-                .product__price 6 150 ₽
-                .product__price.product__price_old 7 150 ₽
+                .product__price 760 ₽
+                .product__price.product__price_old 900 ₽
             .product__options 
-                +counter()
-                +button('В корзину',' button_reverse button_svg_18','','','','','svg_cart','')
-                +button('Видео','button_grey button_svg_18 button_reverse','','','','','svg_video','')
-            +product-link()
-            .product__table 
-                table
+                .product-preview__select 
+                    select(name="")
+                        option(value="ЭКВИ-минус 1кг") ЭКВИ-минус 1кг
+                        option(value="ЭКВИ-минус 5кг") ЭКВИ-минус 5кг
+                +button('В корзину','button_blue button_reverse button_svg_18','','','','','svg_cart','')
 
-                    tr
-                        td Артикул
-                        td ОК 875
-                    tr
-                        td Кол-во зарядов
-                        td 36
-                    tr
-                        td Калибр
-                        td 1,2
-                    tr
-                        td Высота подъема
-                        td 35
-                    tr
-                        td Штук в упаковке
-                        td 4
+            +product-link()
+
             .product__heading Описание
-            .product__description 
-                p Восхитительный замес спецэффектов!
+
+            .section__box.section__box_text
+                p ЭКВИ-минус. Препарат для поддержания оптимального значения уровня рН pH воды плавательного бассейна (7.0 – 7.4). Своевременное использование препарата позволяет избежать образования известкового налёта на внутренних поверхностях бассейна и в фильтрующем оборудовании.
+                ul
+                    li жидкий
+                    li 20 литров 25 кг., 30 литров 37кг.

@@ -1,25 +1,25 @@
-extends ../layout/main
-block variables
-    -var title = 'category'
-    -var description = 'category'
-    -var pageClass = 'body_grey'
-    -var img = '/assets/themes/default/img/'
-block content
-    +breadcrumbs('','Химия для бассейнов')
-    .section.section_grey
-        .section__inner.section__inner_first 
-            +filter-top()
+//- extends ../layout/main
+//- block variables
+//-     -var title = 'category'
+//-     -var description = 'category'
+//-     -var pageClass = 'body_grey'
+//-     -var img = '/assets/themes/default/img/'
+//- block content
+//-     +breadcrumbs('','Химия для бассейнов')
+//-     .section.section_grey
+//-         .section__inner.section__inner_first 
+//-             +filter-top()
             
-        .section__inner.section__inner_sidebar
-            .section__sidebar
-                .section__sticky
-                    +filter()
+//-         .section__inner.section__inner_sidebar
+//-             .section__sidebar
+//-                 .section__sticky
+//-                     +filter()
 
-            .section__box.section__box_category 
-                +product-preview('box')
-            .div 
-            +pagination()
+//-             .section__box.section__box_category 
+//-                 +product-preview('box')
+//-             .div 
+//-             +pagination()
 
-    .section
-        .section__inner
-            +advantage()
+//-     .section
+//-         .section__inner
+//-             +advantage()

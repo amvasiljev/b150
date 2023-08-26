@@ -126,6 +126,83 @@ $('.search_mobile').on('click', function () {
 
 
 
+// slider product 
+
+
+sliderProduct('.product-gallery')
+
+
+
+
+function sliderProduct(elem) {
+
+
+  let arr_next = $(elem).find('.product-gallery__arrow_next')
+  let arr_prev = $(elem).find('.product-gallery__arrow_prev')
+
+  let thumbsPage = 3
+  let wheel = false
+  let space = 5
+
+
+  $(elem).each(function (indx) {
+    let $this = $(this)
+    let prefix = 'product_'
+
+    if ($this.hasClass('product-gallery_page') > 0) {
+      space = 10
+      thumbsPage = 4
+      wheel = false
+    } else {
+      space = 5
+      thumbsPage = 4
+      wheel = false
+
+    }
+
+    let slider2 = $this.find('.product-gallery__images')
+    let slider = $this.find('.product-gallery__thumbs')
+
+    slider2.addClass('swiper_2' + prefix + indx)
+    slider.addClass('swiper' + prefix + indx)
+
+    arr_next[indx].classList.add('product-gallery__arrow_next' + prefix + indx);
+    arr_prev[indx].classList.add('product-gallery__arrow_prev' + prefix + indx);
+
+    slider = new Swiper('.swiper' + prefix + indx, {
+      spaceBetween: space,
+      slidesPerView: thumbsPage,
+      freeMode: true,
+
+      watchSlidesProgress: true,
+      direction: "vertical",
+      mousewheel: wheel,
+
+    });
+    slider2 = new Swiper('.swiper_2' + prefix + indx, {
+      spaceBetween: 5,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        // nextEl: '.product-gallery__arrow_next' + prefix + indx,
+        // prevEl: '.product-gallery__arrow_prev' + prefix + indx,
+
+      },
+      thumbs: {
+        swiper: slider,
+      },
+    });
+
+
+  })
+
+}
+
+
+
+// slider product end
 
 
 

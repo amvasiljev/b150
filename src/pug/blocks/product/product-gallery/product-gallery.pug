@@ -9,10 +9,7 @@ mixin product-gallery(page)
                         picture
                             source(data-srcset=img + 'product/webp/product_1.webp' type="image/webp") 
                             img(data-src= img + 'product/product_1.png' data-sizes="auto").lazyload 
-                    .swiper-slide    
-                        picture
-                            source(data-srcset=img + 'product/webp/product_video.webp' type="image/webp") 
-                            img(data-src= img + 'product/product_video.png' data-sizes="auto").lazyload 
+
                     .swiper-slide    
                         picture
                             source(data-srcset=img + 'product/webp/product_2.webp' type="image/webp") 
@@ -39,10 +36,7 @@ mixin product-gallery(page)
                             source(data-srcset=img + 'product/webp/product_1.webp' type="image/webp") 
                             img(data-src= img + 'product/product_1.png' data-sizes="auto").lazyload 
 
-                    a(href="https://youtu.be/gOHO8D3VKuI" data-fancybox).swiper-slide    
-                        picture
-                            source(data-srcset=img + 'product/webp/product_video.webp' type="image/webp") 
-                            img(data-src= img + 'product/product_video.png' data-sizes="auto").lazyload 
+
                     a(href=img + 'product/product_2.png' data-fancybox).swiper-slide    
                         picture
                             source(data-srcset=img + 'product/webp/product_2.webp' type="image/webp") 

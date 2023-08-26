@@ -18,7 +18,7 @@
         line-height: 1.5;
         letter-spacing: normal;
         text-align: left;
-        color: #061240;
+        color: #1D54A1;
         gap: 10px;
 
         position: relative;
@@ -58,12 +58,12 @@
         }
 
         &:hover{
-            color: #F1823B;
+            color: #090F23;
             transition: all 0.2s ease;
 
 
             &:before{
-                border-color: #F1823B;
+                border-color: #090F23;
                 transition: all 0.2s ease;
 
             }
