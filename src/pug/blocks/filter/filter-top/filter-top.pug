@@ -15,4 +15,7 @@ mixin filter-top(map)
             .filter-top__box
 
                 .filter-top__sort 
-                    +select()
+                    .filter-top__select
+                        select(name="") 
+                            option(value="По наименованию") По наименованию
+                            option(value="По цене") По цене

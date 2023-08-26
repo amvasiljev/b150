@@ -1,118 +1,118 @@
-.select {
+// .select {
 
-    position: relative;
-    width: 250px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 4px;
+//     position: relative;
+//     width: 250px;
+//     display: flex;
+//     justify-content: flex-end;
+//     align-items: center;
+//     padding: 4px;
 
-    min-height: 40px;
-    z-index: 20;
-    border-radius: 10px;
-    // border: solid 1px #ececec;
-    background-color: #f8f8f8;
+//     min-height: 40px;
+//     z-index: 20;
+//     border-radius: 10px;
+//     // border: solid 1px #ececec;
+//     background-color: #f8f8f8;
     
 
-    @media screen and(max-width: 1023px) {
-        min-height: 40px;
-        width: 180px;
+//     @media screen and(max-width: 1023px) {
+//         min-height: 40px;
+//         width: 180px;
 
-    }
+//     }
 
-    &__box {
-        position: absolute;
-        top: 0;
-        left: 0;
+//     &__box {
+//         position: absolute;
+//         top: 0;
+//         left: 0;
 
 
-        width: 250px;
-        height: auto;
+//         width: 250px;
+//         height: auto;
 
-        display: flex;
-        flex-direction: column;
-        border-radius: 10px;
-        border: solid 1px #ececec;
-        background-color: #f8f8f8;
-        transition: max-height 1s ease-in;
+//         display: flex;
+//         flex-direction: column;
+//         border-radius: 10px;
+//         border: solid 1px #ececec;
+//         background-color: #f8f8f8;
+//         transition: max-height 1s ease-in;
 
-        @media screen and(max-width: 1023px) {
+//         @media screen and(max-width: 1023px) {
 
-            width: 180px;
+//             width: 180px;
 
-        }
+//         }
 
-        &_active {
-            height: 100%;
-            overflow: hidden;
-            transition: max-height 1s ease-in;
-        }
-        &:hover{
-            border-color: #F1823B;
-        }
+//         &_active {
+//             height: 100%;
+//             overflow: hidden;
+//             transition: max-height 1s ease-in;
+//         }
+//         &:hover{
+//             border-color: #F1823B;
+//         }
 
-    }
+//     }
 
-    &__item {
-        font-size: 14px;
-        font-weight: bold;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 1.5;
-        letter-spacing: normal;
-        text-align: left;
-        color: #090F23;
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
+//     &__item {
+//         font-size: 14px;
+//         font-weight: bold;
+//         font-stretch: normal;
+//         font-style: normal;
+//         line-height: 1.5;
+//         letter-spacing: normal;
+//         text-align: left;
+//         color: #090F23;
+//         display: flex;
+//         align-items: center;
+//         justify-content: flex-start;
 
-        height: 45px;
-        padding: 0 20px;
-        flex: 0 0 45px;
+//         height: 45px;
+//         padding: 0 20px;
+//         flex: 0 0 45px;
 
-        @media screen and(max-width: 1023px) {
-            height: 40px;
-            flex: 0 0 40px;
-            font-size: 14px;
-        }
+//         @media screen and(max-width: 1023px) {
+//             height: 40px;
+//             flex: 0 0 40px;
+//             font-size: 14px;
+//         }
 
-        &_active {
+//         &_active {
 
-            // box-shadow: 0 8px 15px 0 #e6e8f1;
-            // color: #F1823B;
-        }
-        &:hover{
-            color: #F1823B;
-        }
+//             // box-shadow: 0 8px 15px 0 #e6e8f1;
+//             // color: #F1823B;
+//         }
+//         &:hover{
+//             color: #F1823B;
+//         }
 
-    }
+//     }
 
-    &__icon {
-        height: 37px;
-        width: 37px;
-        cursor: pointer;
-        z-index: 10;
-        position: relative;
+//     &__icon {
+//         height: 37px;
+//         width: 37px;
+//         cursor: pointer;
+//         z-index: 10;
+//         position: relative;
 
-        transition: all 0.1s ease;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+//         transition: all 0.1s ease;
+//         display: flex;
+//         align-items: center;
+//         justify-content: center;
 
-        &_active {
-            transform: rotate(180deg);
-            transition: all 0.1s ease;
-        }
+//         &_active {
+//             transform: rotate(180deg);
+//             transition: all 0.1s ease;
+//         }
 
-        svg {
-            height: 14px;
-            width: 14px;
-            color: #fff;
+//         svg {
+//             height: 14px;
+//             width: 14px;
+//             color: #fff;
 
-            @media screen and(max-width: 1365px) {
-                color: transparent;
-            }
-        }
-    }
+//             @media screen and(max-width: 1365px) {
+//                 color: transparent;
+//             }
+//         }
+//     }
 
-}
+// }

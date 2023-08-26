@@ -391,43 +391,43 @@ $('input[type=checkbox').each(function () {
 
 // custom select 
 
-$('.select').each(function () {
+// $('.select').each(function () {
 
-  var $this = $(this)
-  var icon = $this.find('.select__icon')
-  var box = $this.find('.select__box')
-  var item = $this.find('.select__item')
-  icon.on('click', function () {
-    icon.toggleClass('select__icon_active')
-    box.toggleClass('select__box_active')
+//   var $this = $(this)
+//   var icon = $this.find('.select__icon')
+//   var box = $this.find('.select__box')
+//   var item = $this.find('.select__item')
+//   icon.on('click', function () {
+//     icon.toggleClass('select__icon_active')
+//     box.toggleClass('select__box_active')
 
-  })
+//   })
 
-  item.on('click', function () {
+//   item.on('click', function () {
 
-    if (!$(this).hasClass('select__item_active')) {
-      $(this).css('order', '0').addClass('select__item_active')
-      item.not($(this)).css('order', '1').removeClass('select__item_active')
-      // console.log('click');
+//     if (!$(this).hasClass('select__item_active')) {
+//       $(this).css('order', '0').addClass('select__item_active')
+//       item.not($(this)).css('order', '1').removeClass('select__item_active')
+//       // console.log('click');
 
-      setTimeout(function () {
+//       setTimeout(function () {
 
-        box.addClass('select__box_active')
-        icon.addClass('select__icon_active')
-      }, 200)
+//         box.addClass('select__box_active')
+//         icon.addClass('select__icon_active')
+//       }, 200)
 
-    } else {
-      box.toggleClass('select__box_active')
-      icon.toggleClass('select__icon_active')
-    }
-
-
+//     } else {
+//       box.toggleClass('select__box_active')
+//       icon.toggleClass('select__icon_active')
+//     }
 
 
-  })
 
 
-})
+//   })
+
+
+// })
 
 // nav 
 
