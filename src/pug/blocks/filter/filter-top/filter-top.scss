@@ -1,0 +1,165 @@
+.filter-top {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0 30px 0;
+    gap: 5px;
+
+
+
+    &_map {
+        .filter-top__mobile {
+            max-width: unset;
+            justify-content: space-between;
+
+            // @media screen and (min-width: 767px) and(max-width: 1365px) {
+            //    display: none;
+
+            // }
+        }
+    }
+
+    .title {
+        padding: 0;
+        width: unset;
+    }
+
+    @media #{$m_1024} {
+        flex-flow: wrap;
+        padding: 0 0 40px 0;
+
+        .title {
+
+            padding: 0 0 10px 0;
+        }
+
+        .map-catalog_mobile {
+            margin-bottom: 5px;
+        }
+    }
+
+    @media #{$m_768} {
+        flex-flow: wrap;
+        padding: 0 0 40px 0;
+
+        .title {
+            width: 100%;
+            padding: 0 0 10px 0;
+        }
+
+        .map-catalog_mobile {
+            margin-bottom: 5px;
+        }
+    }
+
+    @media #{$m_320} {
+        flex-flow: wrap;
+        padding: 0 0 30px 0;
+
+        .title {
+            width: 100%;
+            padding: 0 0 10px 0;
+        }
+
+        .map-catalog_mobile {
+            margin-bottom: 5px;
+        }
+    }
+
+    &__view {
+        display: flex;
+        gap: 10px;
+
+        @media screen and (max-width: 1365px) {
+            display: none;
+        }
+
+        @media #{$m_320} {}
+
+        a {
+            display: flex;
+            height: 18px;
+            width: 18px;
+
+            &.active {
+
+                svg {
+                    color: #006dee;
+                }
+            }
+        }
+
+        svg {
+            color: #8B92AF;
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    &__sort {}
+
+
+    &__box {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        z-index: 30;
+    }
+
+    &__mobile {
+        display: none;
+        
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 10px;
+
+        height: 40px;
+        z-index: 20;
+        border-radius: 10px;
+
+        font-size: 14px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+ 
+        letter-spacing: normal;
+        
+        color: #727272;
+        border-radius: 10px;
+        border: solid 1px #ececec;
+
+        gap: 10px;
+
+        flex: 1;
+        max-width: 130px;
+
+        cursor: pointer;
+
+     
+        @media #{$m_768} {
+            margin: 0;
+            display: flex;
+        }
+
+
+        @media #{$m_320} {
+            margin: 0;
+            display: flex;
+        }
+
+        svg {
+            height: 14px;
+            width: 14px;
+            flex: 0 0 14px;
+            transform: rotate(180deg);
+            transition: all 0.1s ease;
+        }
+
+        &:hover{
+            border-color: #F1823B;
+            color: #F1823B;
+        }
+
+    }
+}

@@ -1,0 +1,18 @@
+mixin filter-top(map)
+    if map
+        .filter-top.filter-top_map
+            
+            a(href="javascript:;" data-fancybox data-src="#popup_filter").filter-top__mobile Фильтры
+                svg(class="")
+                    use(xlink:href= img + "img/sprite.svg#filter_button_mobile")
+            
+    else
+        .filter-top
+            +title('Развлекательная пиротехника','title_total','','','','total')
+            a(href="#filter_side").filter-top__mobile.button_catalog Фильтры:
+                svg(class="")
+                    use(xlink:href= img + "sprite.svg#svg_arrow_top")
+            .filter-top__box
+
+                .filter-top__sort 
+                    +select()

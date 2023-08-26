@@ -1,0 +1,9 @@
+mixin select()
+
+    .select
+        .select__box.select__box_active
+            a(href="#" data-sort="resource|publishedon" data-dir="" data-default="desc" class="sort").select__item.select__item_active По цене
+            a(href="#" data-sort="resource|publishedon" data-dir="" data-default="desc" class="sort").select__item По наименованию
+        .select__icon.select__icon_active 
+            svg(class="")
+                use(xlink:href= img + "sprite.svg#svg_arrow_top")
