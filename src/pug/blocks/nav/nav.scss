@@ -1,0 +1,168 @@
+.nav {
+
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    z-index: 100;
+
+    ul {
+
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+
+        &>li {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+
+            position: relative;
+
+            &:hover {
+
+                &>ul{
+                    display: block;
+                }
+
+                &>.nav__svg {
+
+                    transform: rotate(180deg);
+                    transition: all 0.2s ease;
+                }
+            }
+
+            &>a {
+                font-size: 14px;
+                font-weight: bold;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.5;
+                letter-spacing: normal;
+                text-align: left;
+                color: #fff;
+                text-transform: uppercase;
+
+
+
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+
+            &>ul {
+                display: none;
+
+                background-color: #fff;
+              
+
+                position: absolute;
+                width: 300px;
+                top: 50px;
+                left: 0;
+                box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.15);
+                padding: 10px 0;
+
+                &::before{
+                    content:'';
+                    display: block;
+                    height: 50px;
+                    width: 100%;
+                    background: transparent;
+                    position: absolute;
+                    top: -30px;
+                    left: 0;
+                }
+
+                li {
+
+                    &:hover {
+                       &>a{
+                        text-decoration: underline;
+                       }
+                    }
+                    
+                    a {
+
+                        font-size: 14px;
+                        font-weight: normal;
+                        font-stretch: normal;
+                        font-style: normal;
+                        line-height: 1.5;
+                        letter-spacing: normal;
+                        text-align: left;
+                        color: #090f23;
+                        text-transform: none;
+                        padding: 8px 0 8px 10px;
+
+                        
+                    }
+
+
+                    .nav__svg {
+                        color: #1d54a1;
+                    }
+
+                    &>ul {
+                        display: none;
+
+                        background-color: #fff;
+                    
+
+                        position: absolute;
+                        width: 300px;
+                        top: -10px;
+                        left: 310px;
+                        box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.15);
+                        padding: 10px 0;
+
+                        &::before{
+                            content:'';
+                            display: block;
+                            height: 100%;
+                            width: 30px;
+                            background: transparent;
+                            position: absolute;
+                            top: 0;
+                            left: -30px;
+                        }
+
+                        li{
+
+                            a{
+                                font-size: 14px;
+                                font-weight: normal;
+                                font-stretch: normal;
+                                font-style: normal;
+                                line-height: 1.5;
+                                letter-spacing: normal;
+                                text-align: left;
+                                color: #727272;
+
+                                &:hover{
+                                    text-decoration: none;
+                                    color: #090f23;
+                                }
+                            }
+                        }
+
+                    }
+                }
+
+
+            }
+        }
+
+
+    }
+
+
+    &__svg {
+        height: 8px;
+        width: 8px;
+        color: #fff;
+        transition: all 0.2s ease;
+    }
+
+}
