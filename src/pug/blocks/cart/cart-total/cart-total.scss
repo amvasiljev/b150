@@ -1,0 +1,118 @@
+.cart-total {
+
+
+
+
+
+    .button {
+        @media #{$m_768} {
+            order: 3;
+        }
+
+        @media #{$m_320} {
+            order: 3;
+        }
+    }
+
+    &__inner {
+        padding: 30px;
+        border-radius: 12px;
+        background-color: #fff2b9;
+
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        justify-content: space-between;
+
+        @media #{$m_768} {
+            flex-direction: column;
+            gap: 30px
+        }
+
+        @media #{$m_320} {
+            flex-direction: column;
+            gap: 20px;
+            padding: 30px 20px;
+        }
+    }
+
+    &__box {
+        display: flex;
+        flex-direction: column;
+        gap: 13px;
+        margin: 0 0 0 auto;
+
+        @media #{$m_768} {
+            margin: 0;
+            order: 1;
+        }
+
+        @media #{$m_320} {
+            margin: 0;
+            order: 1;
+        }
+
+    }
+
+    &__caption {
+        font-size: 16px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.4;
+        letter-spacing: normal;
+        text-align: left;
+        color: #010101;
+
+        span {
+            font-weight: bold;
+        }
+    }
+
+    &__price {
+        font-size: 16px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.4;
+        letter-spacing: normal;
+        text-align: left;
+        color: #010101;
+
+        span {
+            font-size: 20px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.4;
+            letter-spacing: normal;
+            text-align: right;
+            color: #010101;
+        }
+
+        small {
+            font-size: 20px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.4;
+            letter-spacing: normal;
+            text-align: right;
+            color: #010101;
+        }
+    }
+
+    &__buttons {
+        display: flex;
+        gap: 10px;
+
+
+        @media #{$m_768} {
+            order: 2;
+        }
+
+        @media #{$m_320} {
+            order: 2;
+        }
+    }
+}

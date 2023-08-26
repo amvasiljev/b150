@@ -1,2 +1,10 @@
 mixin header()
 	header.header
+		.header__inner 
+			+logo('header')
+			.header__search
+				+search('','mobile')
+				+search('main')
+			+cart-mini()
+			+button('Заказать звонок','button_blue','','','#popup_callback')
+			+burger()

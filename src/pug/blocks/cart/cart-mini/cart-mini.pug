@@ -1,0 +1,11 @@
+mixin cart-mini()
+    a(href="/").cart-mini#msMiniCart
+        svg(class="")
+            use(xlink:href= img + "sprite.svg#cart_svg")
+        .cart-mini__count.ms2_total_count 10
+        .cart-mini__title Корзина
+            .cart-mini__total 
+                |(&nbsp;
+                span 0
+                |Р&nbsp;)
+            

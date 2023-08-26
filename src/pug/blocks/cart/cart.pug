@@ -1,0 +1,131 @@
+mixin cart()
+
+	.cart__wrapper
+		.cart
+			
+			table
+				tbody
+					tr
+						th Информация о товаре
+						th Цена
+						th Кол-во
+						th Общая стоимость
+						th 
+					tr
+						td.cart__first
+							
+							
+						
+							a(href="/").cart__image
+								picture
+									source(data-srcset=img + 'product/webp/product_2.webp' type="image/webp") 
+									img(data-src= img + 'product/product_2.jpg' data-sizes="auto").lazyload
+
+							a(href='/').cart__name 
+								span Фейерверк Коктейль - 36
+								.cart__article 36 Зарядов
+
+						td
+							span.cart__price 6 150  ₽.
+						td
+							.cart__counter
+								
+								form.ms2_form(method='post' role='form')
+									input(type='hidden' name='key' value='')
+									input(type='hidden' name='price' value='')
+									
+									+counter()
+								
+						td
+							span.cart__price.cart__price_total 6 150 ₽.
+
+						td
+							form.ms2_form(method='post' style='text-align: center;')
+								input(type='hidden' name='key' value='')
+								button.cart__remove(type='submit' name='ms2_action' value='cart/remove')
+									svg(class="cart__svg")
+										use(xlink:href= img + "sprite.svg#svg_cart_remove")
+					
+					tr
+						td.cart__first
+							
+							
+						
+							a(href="/").cart__image
+								picture
+									source(data-srcset=img + 'product/webp/product_2.webp' type="image/webp") 
+									img(data-src= img + 'product/product_2.jpg' data-sizes="auto").lazyload
+
+							a(href='/').cart__name 
+								span Фейерверк Коктейль - 36
+								.cart__article 36 Зарядов
+
+						td
+							span.cart__price 6 150  ₽.
+						td
+							.cart__counter
+								
+								form.ms2_form(method='post' role='form')
+									input(type='hidden' name='key' value='')
+									input(type='hidden' name='price' value='')
+									
+									+counter()
+								
+						td
+							span.cart__price.cart__price_total 6 150 ₽.
+
+						td
+							form.ms2_form(method='post' style='text-align: center;')
+								input(type='hidden' name='key' value='')
+								button.cart__remove(type='submit' name='ms2_action' value='cart/remove')
+									svg(class="cart__svg")
+										use(xlink:href= img + "sprite.svg#svg_cart_remove")
+					
+					tr
+						td.cart__first
+							
+							
+						
+							a(href="/").cart__image
+								picture
+									source(data-srcset=img + 'product/webp/product_2.webp' type="image/webp") 
+									img(data-src= img + 'product/product_2.jpg' data-sizes="auto").lazyload
+
+							a(href='/').cart__name 
+								span Фейерверк Коктейль - 36
+								.cart__article 36 Зарядов
+
+						td
+							span.cart__price 6 150  ₽.
+						td
+							.cart__counter
+								
+								form.ms2_form(method='post' role='form')
+									input(type='hidden' name='key' value='')
+									input(type='hidden' name='price' value='')
+									
+									+counter()
+								
+						td
+							span.cart__price.cart__price_total 6 150 ₽.
+
+						td
+							form.ms2_form(method='post' style='text-align: center;')
+								input(type='hidden' name='key' value='')
+								button.cart__remove(type='submit' name='ms2_action' value='cart/remove')
+									svg(class="cart__svg")
+										use(xlink:href= img + "sprite.svg#svg_cart_remove")
+					
+					
+			+button('Очистить корзину','button_transparent button_low','/')
+
+		.cart__form
+			
+			.cart__delivery Доставка:
+				span 0
+				span ₽
+			.cart__total Стоимость товаров:
+				span#ms2_order_cost 6150 
+				span ₽
+
+			+form('cart')

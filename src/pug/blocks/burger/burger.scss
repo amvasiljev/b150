@@ -1,0 +1,41 @@
+.burger {
+
+    height: 40px;
+    width: 44px;
+    border-radius: 16px;
+    border: solid 1px #fff;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    transition: all 0.2s ease;
+
+    @media #{$m_1024} {
+        display: flex;
+    }
+    @media #{$m_768} {
+        display: flex;
+    }
+    @media #{$m_320} {
+        display: flex;
+    }
+
+
+    svg {
+        height: 24px;
+        width: 24px;
+        color: #fff;
+        transition: all 0.2s ease;
+    }
+
+    &:hover {
+        border-color: #F1823B;
+        transition: all 0.2s ease;
+
+        svg {
+            color: #F1823B;
+            transition: all 0.2s ease;
+        }
+    }
+}

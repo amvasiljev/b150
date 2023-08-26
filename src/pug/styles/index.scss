@@ -40,6 +40,14 @@
 @import '../blocks/product/product-link/product-link';
 
 
+@import '../blocks/cart/cart';
+@import '../blocks/cart/cart-mini/cart-mini';
+@import '../blocks/cart/cart-total/cart-total';
+
+
+@import '../blocks/search/search';
+
+
 ::-webkit-scrollbar {
     width: 4px;
     height: 4px;

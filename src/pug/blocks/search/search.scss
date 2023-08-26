@@ -1,0 +1,101 @@
+.search {
+
+
+   
+    @media #{$m_320} {
+
+    }
+
+
+    form {
+        width: 100%;
+        border-radius: 16px;
+        background-color: #fff;
+
+        display: flex;
+        justify-content: flex-start;
+        // padding: 0 13px 0 0;
+        align-items: center;
+    }
+
+    input {
+        width: 100%;
+        height: 40px;
+
+        padding: 0 20px 0 0;
+        border-radius: 10px;
+
+        background-color: #fff;
+        font-size: 16px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.5;
+        letter-spacing: normal;
+        text-align: left;
+        color: #132565;
+
+        &::placeholder {
+
+            color: rgba(19, 37, 101, 0.5);
+        }
+    }
+
+
+    button[type=submit] {
+        border-radius: 16px;
+        height: 40px;
+        width: 40px;
+        flex: 0 0 40px;
+        background-color: #fff;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+
+
+    }
+
+    &__svg {
+        width: 24px;
+        height: 24px;
+    }
+
+    
+
+   
+    &_main{
+        max-width: 340px;
+        width: 100%;
+        @media #{$m_768} {
+            max-width: 240px;
+        }
+        svg{
+            color: #132565;
+        }
+    }
+
+
+    &_mobile{
+        display: none;
+        cursor: pointer;
+        width: 24px;
+        margin: 0 0 0 auto;
+        svg{
+            color: #fff;
+        }
+
+        &:hover{
+            svg{
+                color: #F1823B;
+            }
+        }
+        &_active{
+            svg{
+                color: #F1823B;
+            }
+        }
+    }
+
+}
