@@ -5,7 +5,7 @@ mixin filter(main)
 			.filter__box.filter__box_check
 
 				fieldset.filter__fieldset(id='mse2_msoption|custom_length')
-					label.filter__label.filter__label_check(for='mse2_msoption|custom_brand_1')
+					label.filter__label.filter__label_check
 
 						input(type='checkbox' name='custom_length' id='mse2_msoption|custom_brand_1' value='упер салюты')
 						span Супер салюты
@@ -102,27 +102,31 @@ mixin filter(main)
 						<div id="slider-range_1" class="slider-range_container"></div>
 
 				.filter__wrapper
-					.filter__title Количество зарядов
-						svg(class="")
-							use(xlink:href= img + "sprite.svg#svg_nav")
+					h4.filter__title Бренды
 
-					.filter__box.filter__box_range
-
-
-						//- <label for="amount"></label>
-						//-     <input type="text" id="amount"  style="border:1; color:#f6931f; font-weight:bold; opacity: 0;">
-
-						.filter__range 
-							label.filter__label от
-								input(type='text' name='ms|price' id='mse2_ms|price_0' value='100')
-								.filter__buffer
-
-
-							label.filter__label до
-								input(type='text' name='ms|price' id='mse2_ms|price_1' value='300')
-								.filter__buffer
-						<div id="slider-range_2" class="slider-range_container"></div>
-
+					.filter__box.filter__box_check.filter__box_hide
+						
+						fieldset.filter__fieldset(id='mse2_msoption|custom_length')
+							label.filter__label.filter__label_check
+								svg(class="filter__svg_check")
+									use(xlink:href= img + "sprite.svg#filter_check")
+								input(type='checkbox' name='custom_length' id='mse2_msoption|custom_brand_1' value='BAYROL chemicals Германия')
+								span BAYROL chemicals Германия
+							label.filter__label.filter__label_check.disabled
+								svg(class="filter__svg_check")
+									use(xlink:href= img + "sprite.svg#filter_check")
+								input(type='checkbox' name='custom_length' id='mse2_msoption|custom_brand_1' value='INTEX' disabled='')
+								span INTEX
+							label.filter__label.filter__label_check
+								svg(class="filter__svg_check")
+									use(xlink:href= img + "sprite.svg#filter_check")
+								input(type='checkbox' name='custom_length' id='mse2_msoption|custom_brand_1' value='Крипсол Kripsol')
+								span Крипсол Kripsol
+							label.filter__label.filter__label_check
+								svg(class="filter__svg_check")
+									use(xlink:href= img + "sprite.svg#filter_check")
+								input(type='checkbox' name='custom_length' id='mse2_msoption|custom_brand_1' value='Маркопул Кемиклс Россия')
+								span Маркопул Кемиклс Россия
 
 
 

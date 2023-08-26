@@ -77,5 +77,9 @@
     <rect x="0.348389" y="13.4512" width="18.4952" height="1.68138" rx="0.840692" transform="rotate(-45 0.348389 13.4512)" fill="white"></rect>
     <rect x="1.18896" width="18.4952" height="1.68138" rx="0.840692" transform="rotate(45 1.18896 0)" fill="white"></rect>
   </symbol>
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" id="filter_check">
+    <rect x="0.5" y="0.5" width="19" height="19" rx="3.5" fill="var(--color-1)" stroke="var(--color-3)"></rect>
+    <path d="M8 14.4L4 10.4L5.4 9L8 11.6L14.6 5L16 6.4L8 14.4Z" fill="var(--color-2)"></path>
+  </symbol>
 </svg>
 

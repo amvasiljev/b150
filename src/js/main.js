@@ -357,21 +357,33 @@ customInput.each(function () {
 
 })
 
-
 $('.filter__label_check input').on('change', function () {
 
   $(this).parent('.filter__label_check').toggleClass('filter__label_check_active')
 })
 
-$('.filter__title').each(function () {
-  var $this = $(this)
-  var box = $this.next('.filter__box')
-  $this.on('click', function () {
-    $this.toggleClass('filter__title_hide')
-    box.toggleClass('filter__box_hide')
+$('.filter__label_radio input').on('click', function () {
+  var parent = $(this).parent('.filter__label_radio')
+  parent.addClass('filter__label_radio_active')
+  $('.filter__label_radio').not(parent).removeClass('filter__label_radio_active')
+})
 
-    box.slideToggle(300)
-  })
+
+
+$('input[type=checkbox').each(function () {
+  var $this = $(this)
+  var parent = $(this).parent('label')
+
+  if ($this.is(':checked')) {
+
+    if (parent.hasClass('filter__label_check')) {
+      parent.addClass('filter__label_check_active')
+    }
+  } else {
+    if (parent.hasClass('filter__label_check')) {
+      parent.removeClass('filter__label_check_active')
+    }
+  }
 })
 
 // filter end
