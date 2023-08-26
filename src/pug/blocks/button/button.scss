@@ -75,11 +75,15 @@
     }
     &_blue{
 
-        background-image: linear-gradient(to bottom, #397cd9 0%, #1d54a1 100%);
+        // background-image: linear-gradient(to bottom, #397cd9 0%, #1d54a1 100%);
+        background-color: #1d54a1;
+        border-color: #1d54a1;
         color: #fff;
 
         &:hover{
             border-color: #1d54a1;
+            background-color: #fff;
+            color: #1d54a1;
         }
     }
 

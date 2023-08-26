@@ -1,2 +1,16 @@
 mixin footer()
     footer.footer
+        .footer__inner
+            
+            //- .footer__top 
+                
+
+            .footer__info 
+                +logo('','footer')
+            
+                +social()
+                +button('Заказать звонок','button_blue','','','#popup_callback')
+                .footer__copyright ©  2011 Все права защищены! b150.ru
+            +top()
+            .footer__nav 
+                +nav-footer()

@@ -2,18 +2,18 @@ mixin logo(header,footer,animate,popup)
     if header
         a(href="/").logo.logo_header 
             picture
-                source(data-srcset=img + 'logo/webp/logo_header.webp' type="image/webp") 
-                img(data-src= img + 'logo/logo_header.png' data-sizes="auto" alt="img").lazyload
+                source(data-srcset=img + 'logo/webp/logo.webp' type="image/webp") 
+                img(data-src= img + 'logo/logo.png' data-sizes="auto" alt="img").lazyload
     else if popup
-        .logo.logo_header 
+        .logo.logo 
             picture
-                source(data-srcset=img + 'logo/webp/logo_header.webp' type="image/webp") 
-                img(data-src= img + 'logo/logo_header.png' data-sizes="auto" alt="img").lazyload
+                source(data-srcset=img + 'logo/webp/logo.webp' type="image/webp") 
+                img(data-src= img + 'logo/logo.png' data-sizes="auto" alt="img").lazyload
     else if footer
         .logo.logo_footer 
             picture
-                source(data-srcset=img + 'logo/webp/logo_footer.webp' type="image/webp") 
-                img(data-src= img + 'logo/logo_footer.png' data-sizes="auto" alt="img").lazyload
+                source(data-srcset=img + 'logo/webp/logo.webp' type="image/webp") 
+                img(data-src= img + 'logo/logo.png' data-sizes="auto" alt="img").lazyload
 
     else if animate 
         .logo.logo_animation

@@ -1,0 +1,13 @@
+.social {
+
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-flow: wrap;
+    &__item {
+        display: flex;
+        height: 24px;
+        width: 24px;
+        flex-shrink: 0;
+    }
+}
