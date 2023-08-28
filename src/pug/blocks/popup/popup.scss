@@ -1,0 +1,85 @@
+.popup {
+    width: 100%;
+    border-radius: 16px;
+    display: none;
+
+    &__title {
+        font-size: 18px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.5;
+        letter-spacing: normal;
+        text-align: center;
+        color: #132565;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+
+    &__text {
+        font-size: 14px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.5;
+        letter-spacing: normal;
+        text-align: center;
+        color: #727272;
+        margin: 0 auto 35px;
+    }
+
+
+    &__image {
+        height: 115px;
+        width: 100%;
+        position: relative;
+       
+        border-radius: 16px 16px 0 0;
+        overflow: hidden;
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+
+        }
+
+        .logo {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            height: 98px;
+            width: 384px;
+
+
+        }
+    }
+
+    &__inner {
+        padding: 38px 50px 30px;
+        background-color: #fff;
+
+        @media #{$m_320} {
+            padding: 0 20px 30px;
+        }
+
+    }
+
+
+    &_callback {
+        max-width: 620px;
+        background-color: #061240;
+        padding: 0;
+    }
+
+    &_thanks {
+        max-width: 400px;
+    }
+
+}
+
+
+.fancybox-button svg path {
+    color: #000;
+}

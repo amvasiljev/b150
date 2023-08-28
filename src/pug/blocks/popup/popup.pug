@@ -1,3 +1,11 @@
 mixin popup()
-    .popup
-    .popup#popup_thanks
+
+    .popup#popup_thanks.popup_thanks
+        .popup__title Спасибо за заявку 
+        .popup__text В ближайшее время с Вами свяжется наш менеджер
+    .popup#popup_callback.popup_callback
+        
+        .popup__inner
+            .popup__title Заказать звонок
+            .popup__text Заполните форму и мы свяжемся с вами в ближайшее время!
+            +form()

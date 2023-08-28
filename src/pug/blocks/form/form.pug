@@ -12,11 +12,11 @@ mixin form(cart)
                 <button class="button button_blue" type="submit" value="order/submit" name="ms2_action">Оформить заказ</button>
 
     else
-        .form
+        .form.form_validate
             form()
-                input(type="text" placeholder="Ваше Имя*" value="" name="")
-                input(type="text" placeholder="Телефон*" value="" name="")
-                input(type="text" placeholder="Электронная почта" value="" name="")
+                input(type="text" placeholder="Ваше Имя*" value="" name="name" required)
+                input(type="tel" placeholder="Телефон*" value="" name="tel" required minlength="18")
+                input(type="text" placeholder="Электронная почта" value="" name="email" required)
                
                 +button('Оставить заявку','button button_blue','/','')
 
