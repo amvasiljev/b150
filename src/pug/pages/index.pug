@@ -1,21 +1,21 @@
-//- extends ../layout/main
-//- block variables
-//-     -var title = 'index'
-//-     -var description = 'index'
-//-     -var pageClass = ''
-//-     -var img = '/assets/themes/default/img/'
-//- block content
-//-     +first()
-//-     .section
-//-         .section__inner 
-//-             +title('Хиты продаж<br><span>Химия для плавательных бассейнов и SPA</span>','title_center title_double','','h2')
-//-             +slider('add')
-//-     .section
-//-         .section__inner 
+extends ../layout/main
+block variables
+    -var title = 'index'
+    -var description = 'index'
+    -var pageClass = ''
+    -var img = '/assets/themes/default/img/'
+block content
+    +first()
+    .section
+        .section__inner 
+            +title('Хиты продаж<br><span>Химия для плавательных бассейнов и SPA</span>','title_center title_double','','h2')
+            +slider('add')
+    .section
+        .section__inner 
 
-//-             +service()
-//-     .section
-//-         .section__inner 
+            +service()
+    .section
+        .section__inner 
 
-//-             +advantage()
+            +advantage()
 

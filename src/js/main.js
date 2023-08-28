@@ -671,6 +671,21 @@ $('.tab').each(function () {
 // tab end
 
 
+// to Top 
+
+var toTop = $('.top')
+
+toTop.on('click', function (e) {
+  e.preventDefault();
+  $('html, body').animate({
+    scrollTop: 0,
+    easing: 'linear'
+  }, 1000);
+
+})
+
+// to Top end
+
 
 
 

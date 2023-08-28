@@ -1,18 +1,18 @@
-//- extends ../layout/main
-//- block variables
-//-     -var title = 'product'
-//-     -var description = 'product'
-//-     -var pageClass = ''
-//-     -var img = '/assets/themes/default/img/'
-//- block content
-//-     +breadcrumbs('Химия для бассейнов','ЭКВИ-минус 20л')
-//-     .section
-//-         .section__inner.section__inner_first 
-//-             +product()
-//-     .section
-//-         .section__inner 
-//-             +title('Также рекомендуем','','','h2')
-//-             +slider('add')
-//-     .section
-//-         .section__inner 
-//-             +advantage()
+extends ../layout/main
+block variables
+    -var title = 'product'
+    -var description = 'product'
+    -var pageClass = ''
+    -var img = '/assets/themes/default/img/'
+block content
+    +breadcrumbs('Химия для бассейнов','ЭКВИ-минус 20л')
+    .section
+        .section__inner.section__inner_first 
+            +product()
+    .section
+        .section__inner 
+            +title('Также рекомендуем','','','h2')
+            +slider('add')
+    .section
+        .section__inner 
+            +advantage()
