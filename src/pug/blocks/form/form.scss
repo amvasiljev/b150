@@ -1,0 +1,59 @@
+.form {
+
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        background-color: #fff;
+    }
+
+    input {
+        height: 40px;
+
+        padding: 0 10px;
+        border-radius: 12px;
+        border: solid 1px #d9d9d9;
+        width: 100%;
+
+
+        font-size: 16px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.5;
+        letter-spacing: normal;
+        text-align: left;
+        color: #090f23;
+
+        &::placeholder {
+            color: #727272;
+        }
+    }
+
+
+    &_cart {
+
+        border-top: 1px solid #d9d9d9;
+        padding: 20px 0 0 0;
+
+        input {
+            background-color: #f8f8f8;
+        }
+
+        form {
+            background-color: #f8f8f8;
+        }
+    }
+
+    &__consent{
+        font-size: 14px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.5;
+        letter-spacing: normal;
+        text-align: left;
+        color: #727272;
+    }
+}

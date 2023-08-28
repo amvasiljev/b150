@@ -25,12 +25,14 @@
         .cart-mini {
             flex-shrink: 0;
             margin-right: 40px;
+            margin: 0 0 0 auto;
         }
 
         .burger {
             flex-shrink: 0;
         }
 
+        
 
         @media #{$m_1024} {
 
@@ -73,6 +75,7 @@
             }
         }
 
+      
 
     }
 

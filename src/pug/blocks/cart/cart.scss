@@ -164,7 +164,7 @@
         display: flex;
         flex: 0 0 105px;
         padding: 0 10px 0 0;
-        outline: 1px solid wheat;
+
 
         @media #{$m_768} {
             margin-left: 0;
@@ -194,7 +194,7 @@
         line-height: 1.5;
         letter-spacing: normal;
         text-align: left;
-        color: #f1823b;
+        color: #1d54a1;
         white-space: nowrap;
 
         small {
@@ -260,7 +260,7 @@
 
         border-radius: 16px;
         box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.15);
-        background-color: #F1823B;
+        background-color: #1d54a1;
         cursor: pointer;
         transition: all 0.2s ease;
 
@@ -270,7 +270,7 @@
             transition: all 0.2s ease;
 
             svg {
-                color: #F1823B;
+                color: #1d54a1;
                 transition: all 0.2s ease;
             }
         }

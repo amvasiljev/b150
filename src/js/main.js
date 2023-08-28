@@ -115,6 +115,76 @@ $('select').on('blur', function () {
 
 
 
+
+// counter product 
+
+
+// $('.input_count').each(function(){
+//   var $this = $(this)
+//   var id = '#' + $this.attr('data-id')
+//   var count = $this.attr('data-count')
+
+//   $(id).find('input[type=number]').attr('value', count)
+
+// })
+
+$('.minicart_change').each(function () {
+  var $this = $(this)
+  var input = $this.find('input[type=number]')
+
+  var inputVal = input.attr('value') * 1
+  var action = $this.find('.counter__option')
+  var buttonChange = $this.find('button[value="cart/change"]')
+  var buttonAdd = $this.find('button[value="cart/add"]')
+
+
+
+  action.on('click', function (e) {
+
+    if ($(this).hasClass('counter__option_plus')) {
+
+      inputVal++
+
+      if (buttonAdd.length > 0) {
+        // buttonAdd.trigger('click')
+      } else {
+        setTimeout(function () {
+          // buttonChange.trigger('click')
+        }, 4)
+      }
+
+
+
+
+    } else {
+      if (inputVal >= 1) {
+
+        inputVal--
+        setTimeout(function () {
+          // buttonChange.trigger('click')
+        }, 4)
+      } else {
+        inputVal = 0
+      }
+
+    }
+
+
+    input.attr('value', inputVal)
+  
+    setTimeout(function () {
+      // orderDouble()
+    }, 10)
+
+  })
+})
+
+// counter product end
+
+
+
+
+
 // search mobile 
 
 $('.search_mobile').on('click', function () {

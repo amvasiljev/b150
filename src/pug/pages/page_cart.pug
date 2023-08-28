@@ -1,0 +1,16 @@
+extends ../layout/main
+block variables
+    -var title = 'cart'
+    -var description = 'cart'
+    -var pageClass = ''
+    -var img = '/assets/themes/default/img/'
+block content
+    +breadcrumbs('','Корзина')
+    .section
+        .section__inner.section__inner_single
+            +title('Оформление заказа','','h1','')
+            +cart()
+
+    .section
+        .section__inner
+            +advantage()
