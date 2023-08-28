@@ -1,0 +1,62 @@
+.tab {
+
+
+    &__links {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 20px;
+        margin-bottom: 45px;
+        flex-flow: wrap;
+        @media #{$m_320} {
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+        
+    }
+
+    &__link {
+        height: 40px;
+        display: flex;
+       
+        justify-content: center;
+        align-items: center;
+        
+       
+        padding: 0 10px;
+        border-radius: 10px;
+        border: solid 1px #ececec;
+        font-size: 14px;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.5;
+        letter-spacing: normal;
+        text-align: left;
+        color: #727272;
+    
+        cursor: pointer;
+
+        @media #{$m_320} {
+            font-size: 12px;
+
+        }
+        
+
+        &_active{
+            background-color: #1d54a1;
+            border-color: #1d54a1;
+            color: #fff;
+        }
+    }
+
+    &__wrapper {}
+
+    &__content {
+        display: none;
+
+        &_active{
+            display: block;
+        }
+    }
+}

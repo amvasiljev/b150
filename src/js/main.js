@@ -590,6 +590,90 @@ $('.filter__title').each(function () {
 
 // nav 
 
+
+
+
+
+// section box text 
+
+$('.section__box_text').find('table').each(function () {
+  var $this = $(this)
+  var tr = $this.find('tr')
+  var td = $this.find('td')
+  var th = $this.find('th')
+  var img = $this.find('img')
+
+  $this.removeAttr('style')
+  tr.removeAttr('style')
+  td.removeAttr('style')
+  th.removeAttr('style')
+  img.removeAttr('style')
+
+
+
+  $this.wrap($('<div class="section__table"></div>'))
+
+
+  $('.section__table').before($('<div style="clear: both;"></div>'))
+})
+
+
+
+// section box text end
+
+
+// section final 
+
+$('.section__inner').last().addClass('section__inner_final')
+
+// section final end
+
+
+// tab 
+
+$('.tab').each(function () {
+  var $this = $(this)
+  var link = $this.find('.tab__link')
+  var content = $this.find('.tab__content')
+
+  link.each(function (indx) {
+    $(this).attr('data-tab', '#tab_' + indx)
+    content.eq(indx).attr('id', 'tab_' + indx)
+
+    if ($(this).hasClass('tab__link_active')) {
+
+   
+
+      content.eq(indx).addClass('tab__content_active')
+
+    }
+
+
+    $(this).on('click', function () {
+      $(this).addClass('tab__link_active')
+      link.not($(this)).removeClass('tab__link_active')
+
+      var id = $(this).attr('data-tab')
+
+      $(id).show()
+      content.not($(id)).hide()
+    })
+
+
+
+
+  })
+})
+
+
+
+
+// tab end
+
+
+
+
+
 $('.button_catalog').on('click', function (e) {
   e.preventDefault()
   var side = $(this).attr('href')
@@ -774,3 +858,4 @@ mediaQuery_1199.addListener(filterMove)
 filterMove(mediaQuery_1199)
 mediaQuery_1200.addListener(mobileMove2)
 mobileMove2(mediaQuery_1200)
+
