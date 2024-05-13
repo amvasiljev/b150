@@ -411,5 +411,13 @@
     }
 
 
+    &_first{
+        position: relative;
+        .slider__options{
+            position: absolute;
+            top: calc(50% - 20px);
+            z-index: 20;
+        }
+    }
 
 }

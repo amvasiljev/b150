@@ -69,26 +69,26 @@ if (isProd) {
 				filename: `${PATHS.assets}themes/default/css/[name].css`,
 			}
 		),
-		new ImageMinimizerPlugin({
-			severityError: 'warning',
-			minimizerOptions: {
-				plugins: [
-					['gifsicle', { interlaced: true }],
-					['jpegtran', { progressive: true }],
-					['optipng', { optimizationLevel: 5 }],
-					[
-						'svgo',
-						{
-							plugins: [
-								{
-									removeViewBox: false,
-								},
-							],
-						},
-					],
-				],
-			},
-		})
+		// new ImageMinimizerPlugin({
+		// 	severityError: 'warning',
+		// 	minimizerOptions: {
+		// 		plugins: [
+		// 			['gifsicle', { interlaced: true }],
+		// 			['jpegtran', { progressive: true }],
+		// 			['optipng', { optimizationLevel: 5 }],
+		// 			[
+		// 				'svgo',
+		// 				{
+		// 					plugins: [
+		// 						{
+		// 							removeViewBox: false,
+		// 						},
+		// 					],
+		// 				},
+		// 			],
+		// 		],
+		// 	},
+		// })
 	)
 }
 
@@ -132,7 +132,7 @@ module.exports = {
 		rules: [
 			{
 				test: /.pug$/i,
-				loader: 'pug-loader'
+				loader: 'simple-pug-loader'
 			},
 			{
 				test: /\.m?js$/,

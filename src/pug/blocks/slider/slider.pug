@@ -1,4 +1,4 @@
-mixin slider(add)
+mixin slider(add,first)
     if add
         .slider.slider_product
             .slider__options
@@ -15,4 +15,24 @@ mixin slider(add)
             .swiper
                 .swiper-wrapper
                     +product-preview('','slider')
+                .swiper-pagination
+    else if first
+        .slider.slider_first
+            .slider__options
+                
+                .slider__arrows
+                    
+                    .slider__arrow.slider__arrow_prev
+                        svg(class="slider__svg")
+                            use(xlink:href= img + "sprite.svg#svg_arrow_top")
+
+                    .slider__arrow.slider__arrow_next
+                        svg(class="slider__svg")
+                            use(xlink:href= img + "sprite.svg#svg_arrow_top")
+            .swiper
+                .swiper-wrapper
+                    .swiper-slide 
+                        +first()
+                    .swiper-slide 
+                        +first()
                 .swiper-pagination
